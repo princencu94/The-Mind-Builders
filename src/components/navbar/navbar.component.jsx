@@ -594,7 +594,7 @@ const Navbar = () => {
         </Transition>
       </Popover>
 
-      <HeroSection/>
+      
     </div>
     )
 }
