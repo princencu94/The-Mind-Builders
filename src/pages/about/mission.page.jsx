@@ -1,6 +1,5 @@
 import Navbar from "../../components/navbar/navbar.component";
 import HeaderBanner from "../../components/header-banners/header-banners.component";
-import { CameraIcon } from '@heroicons/react/solid';
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 
@@ -53,7 +52,7 @@ const MissionPage = () => {
                     </div>
                     <div className="mt-8 lg:mt-0">
                         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                        <p className="text-lg text-gray-500">
+                        <p className="text-2xl text-gray-500">
                         At Intercom, our mission is to fuel the success of our clients and provide employees with rewarding opportunities for career growth.
                         </p>
                         </div>
