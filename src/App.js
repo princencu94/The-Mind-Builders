@@ -9,10 +9,13 @@ import ContactUsPage from './pages/about/contactus.page';
 import AdministrativeSupportPage from './pages/services/administrative-support.page';
 import FinanceAccountingPage from './pages/services/finance-accounting.page';
 import HumanResourcesPage from './pages/services/human-resources.page';
+import Behavioralhealthcare from './pages/services/behavioral-healthcare.page';
+import HealthcareSupportPage from './pages/services/healthcare-support.page';
+import InformationTechnologyPage from './pages/services/information-technology.page';
 function App() {
   return (
     <div className="App">
-      <HumanResourcesPage/>
+      <InformationTechnologyPage/>
     </div>
   );
 }
