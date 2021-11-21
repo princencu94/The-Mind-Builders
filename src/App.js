@@ -7,11 +7,12 @@ import CompetitiveAdvantages from './pages/about/competitive-advantages.page';
 import TeamPage from './pages/about/team.page';
 import ContactUsPage from './pages/about/contactus.page';
 import AdministrativeSupportPage from './pages/services/administrative-support.page';
-
+import FinanceAccountingPage from './pages/services/finance-accounting.page';
+import HumanResourcesPage from './pages/services/human-resources.page';
 function App() {
   return (
     <div className="App">
-      <AdministrativeSupportPage/>
+      <HumanResourcesPage/>
     </div>
   );
 }
