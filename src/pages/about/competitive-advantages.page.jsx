@@ -154,7 +154,6 @@ const Features = () => {
 const CompetitiveAdvantages = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Competitive Advantages" />
 
             <div className="bg-white overflow-hidden">

@@ -6,7 +6,6 @@ import Footer from "../../components/footer/footer.component";
 const StaffTypesPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Types of Staffing"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

@@ -6,7 +6,6 @@ import Footer from "../../components/footer/footer.component";
 const JobSearchPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Job Search"/>
 
             <Footer/>

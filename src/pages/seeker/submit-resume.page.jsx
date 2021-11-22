@@ -6,7 +6,6 @@ import Footer from "../../components/footer/footer.component";
 const SubmitResumePage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Submit Your Resume"/>
             
             <Footer/>

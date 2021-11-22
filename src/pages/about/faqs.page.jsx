@@ -43,7 +43,6 @@ const faqs = [
 const Faqs = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Frequently Asked Questions" />
             <div className="bg-gray-50">
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">

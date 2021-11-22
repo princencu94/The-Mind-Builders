@@ -103,7 +103,6 @@ const TwoColumns = () => {
 const Behavioralhealthcare = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Behavioral Healthcare"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

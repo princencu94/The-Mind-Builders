@@ -1,2 +1,30 @@
+.primary-color {
+    color:#022a52;
+}
+
+.primary-color-bg {
+    background-color:#022a52;
+}
+
+.secondary-color {
+    color:#f18768;
+}
+
+.secondary-color-bg {
+    background-color: #f18768;
+}
+
+.secondary-color-bg-8 {
+    background-color: #f18768;
+    opacity: 0.6;
+}
+
+.main-color {
+    color:#6ec1e5;
+}
+
+.main-color-bg {
+    background-color: #6ec1e5;
+}
 
 

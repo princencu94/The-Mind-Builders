@@ -10,7 +10,6 @@ import ListingBk from '../assets/listing-bk.png';
 const Homepage = () => {
     return (
         <div>
-            <Navbar/>
             <HeroSection/>
             <ServicesSection/>
                 <div className="relative pb-32 bg-gray-800">

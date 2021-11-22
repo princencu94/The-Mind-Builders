@@ -6,7 +6,6 @@ import CallToAction from "../../components/call-to-action/call-to-action.compone
 const ContactUsPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Contact Us"/>
             <Contact/>
             <Footer/>

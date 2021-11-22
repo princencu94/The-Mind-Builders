@@ -87,7 +87,6 @@ const TwoColumns = () => {
 const AdministrativeSupportPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Administrative Support"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

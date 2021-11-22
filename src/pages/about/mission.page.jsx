@@ -6,7 +6,6 @@ import CallToAction from "../../components/call-to-action/call-to-action.compone
 const MissionPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Mission Statement and Corporate Vision"/>
 
             <div className="bg-white overflow-hidden">

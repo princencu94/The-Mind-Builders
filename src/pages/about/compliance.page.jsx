@@ -6,7 +6,6 @@ import CallToAction from "../../components/call-to-action/call-to-action.compone
 const Compliance = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Compliance is Our Focus" />
 
             <div className="bg-white overflow-hidden">

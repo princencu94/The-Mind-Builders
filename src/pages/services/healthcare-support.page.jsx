@@ -174,7 +174,7 @@ const TwoColumns2 = () => {
 const HealthcareSupportPage = () => {
     return (
         <div>
-            <Navbar/>
+
             <HeaderBanner heading="Healthcare Support"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

@@ -6,7 +6,6 @@ import CallToAction from "../../components/call-to-action/call-to-action.compone
 const TeamPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Team"/>
             <Team/>
             <CallToAction/>

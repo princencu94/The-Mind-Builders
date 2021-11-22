@@ -175,7 +175,6 @@ const TwoColumns2 = () => {
 const PayrollPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Third Party Payroll Solutions"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

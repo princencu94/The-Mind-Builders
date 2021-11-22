@@ -13,7 +13,6 @@ const stats = [
 const EmployeeRecognitionProgramPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Employee Recognition Program"/>
             <div className="relative bg-white py-16 sm:py-24">
                 <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start">

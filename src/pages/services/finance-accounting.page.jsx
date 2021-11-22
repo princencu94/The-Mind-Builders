@@ -113,7 +113,6 @@ const TwoColumns = () => {
 const FinanceAccountingPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Finance Accounting"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

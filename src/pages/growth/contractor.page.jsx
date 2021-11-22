@@ -179,7 +179,6 @@ const TwoColumns2 = () => {
 const ContractorPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="1099 Independent Contractor Compliance "/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">

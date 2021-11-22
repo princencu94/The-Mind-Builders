@@ -92,7 +92,6 @@ Depending on size and structure of company, various levels of help desk technici
 const InformationTechnologyPage = () => {
     return (
         <div>
-            <Navbar/>
             <HeaderBanner heading="Information Technology"/>
 
             <div className="py-16 bg-gray-50 overflow-hidden">
