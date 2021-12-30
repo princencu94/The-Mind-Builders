@@ -1,9 +1,10 @@
-import Navbar from "../../components/navbar/navbar.component";
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import { ExternalLinkIcon } from '@heroicons/react/solid';
 import { CheckIcon } from '@heroicons/react/outline';
+
+import { Link } from 'react-router-dom';
 
 const ProcessSection = () => {
     return (
@@ -24,13 +25,13 @@ const ProcessSection = () => {
                 </p>
                 <div className="mt-8">
                     <div className="inline-flex rounded-md shadow">
-                    <a
-                        href="#"
+                    <Link
+                        to="/contact-us"
                         className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
                     >
                         Contact Us
                         <ExternalLinkIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>

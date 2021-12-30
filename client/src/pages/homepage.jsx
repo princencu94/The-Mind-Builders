@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar/navbar.component";
 import ServicesSection from "../components/services-section/services-section.component";
 import JobLists from "../components/job-lists/job-lists.component";
 import Clients from "../components/clients/clients.component";

@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
-import Navbar from "../../components/navbar/navbar.component";
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";

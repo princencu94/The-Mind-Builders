@@ -1,7 +1,8 @@
-import Navbar from "../../components/navbar/navbar.component";
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
+import { Link } from 'react-router-dom';
+import hrmage from '../../assets/hr-resources.jpg';
 
 const TwoColumns = () => {
     return (
@@ -128,12 +129,12 @@ const HumanResourcesPage = () => {
                         </div>
                         <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
                         <div className="rounded-md shadow">
-                            <a
-                            href="#"
+                            <Link
+                            to="/contact-us"
                             className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                             >
                                 Contact Us
-                            </a>
+                            </Link>
                         </div>
                         </div>
                     </div>
@@ -163,8 +164,8 @@ const HumanResourcesPage = () => {
                         <blockquote className="relative bg-white rounded-lg shadow-lg">
                         <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                                alt="Whitney leaning against a railing on a downtown street"
+                                src={hrmage}
+                                alt="Hr looking at a CV"
                                 width={1184}
                                 height={500}
                             />

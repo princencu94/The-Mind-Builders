@@ -14,11 +14,6 @@ import logo from '../../assets/logo.png';
 import { Link, Outlet } from 'react-router-dom';
 
 
-const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-]
-
 const aboutIntercom = [
   {
     name: 'Mission Statement',
@@ -123,6 +118,11 @@ const job = [
   {
     name: 'Blog',
     href: 'blog',
+    icon: SupportIcon,
+  },
+  {
+    name: 'Request New Talent',
+    href: 'request-new-talent',
     icon: SupportIcon,
   }
 ]
@@ -235,19 +235,6 @@ const Navbar = () => {
                               </Link>
                             ))}
                           </div>
-                          <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <Link
-                                  to={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                                >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                  <span className="ml-3">{item.name}</span>
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -267,7 +254,7 @@ const Navbar = () => {
                       <span className="primary-color">Staffing Specialties</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
+                          open ? 'text-gray-600' : 'primary-color',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -299,19 +286,6 @@ const Navbar = () => {
                               </Link>
                             ))}
                           </div>
-                          <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <Link
-                                  to={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                                >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                  <span className="ml-3">{item.name}</span>
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -324,14 +298,14 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
+                        open ? 'text-gray-900' : 'primary-color',
                         'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                       )}
                     >
                       <span className="primary-color">Growth Solutions</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
+                          open ? 'text-gray-600' : 'primary-color',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -363,19 +337,7 @@ const Navbar = () => {
                               </Link>
                             ))}
                           </div>
-                          <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <Link
-                                  to={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                                >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                  <span className="ml-3">{item.name}</span>
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
+                    
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -388,7 +350,7 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
+                        open ? 'text-gray-900' : 'primary-color',
                         'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                       )}
                     >
@@ -427,19 +389,6 @@ const Navbar = () => {
                               </Link>
                             ))}
                           </div>
-                          <div className="px-5 py-5 bg-gray-50 space-y-6 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
-                            {callsToAction.map((item) => (
-                              <div key={item.name} className="flow-root">
-                                <Link
-                                  to={item.href}
-                                  className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
-                                >
-                                  <item.icon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                                  <span className="ml-3">{item.name}</span>
-                                </Link>
-                              </div>
-                            ))}
-                          </div>
                         </div>
                       </Popover.Panel>
                     </Transition>
@@ -451,7 +400,7 @@ const Navbar = () => {
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <Link
-                to="/submit-your-resume"
+                to="/request-new-talent"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white secondary-color-bg hover:secondary-color-bg-8"
               >
                 Submit Resume
@@ -511,7 +460,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <Link
-                    to="/submit-your-resume"
+                    to="/request-new-talent"
                     className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white secondary-color-bg hover:secondary-color-bg-8"
                   >
                     Submit Resume

@@ -1,6 +1,25 @@
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
+
 import { MailIcon, PhoneIcon } from '@heroicons/react/outline';
 
+
+
 const Contact = () => {
+    const form = useRef();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        emailjs.sendForm('contact_service', 'template_mizzseu', form.current, 'user_6yw3VTKUnxWHWJFIJuuI9')
+      .then((result) => {
+          console.log(result.text);
+          alert("Message sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+    }
+              
+
     return (
         <div className="relative bg-white">
             <div className="absolute inset-0">
@@ -32,7 +51,7 @@ const Contact = () => {
                         <dt className="sr-only">Email</dt>
                         <dd className="flex">
                         <MailIcon className="flex-shrink-0 h-6 w-6 text-gray-400" aria-hidden="true" />
-                        <span className="ml-3">support@example.com</span>
+                        <span className="ml-3">info@intercomstaffing.com</span>
                         </dd>
                     </div>
                     </dl>
@@ -41,14 +60,14 @@ const Contact = () => {
                 </div>
                 <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div className="max-w-lg mx-auto lg:max-w-none">
-                    <form action="#" method="POST" className="grid grid-cols-1 gap-y-6">
+                    <form ref={form} onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
                     <div>
                         <label htmlFor="full-name" className="sr-only">
                         Full name
                         </label>
                         <input
                         type="text"
-                        name="full-name"
+                        name="fullname"
                         id="full-name"
                         autoComplete="name"
                         className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
@@ -97,7 +116,7 @@ const Contact = () => {
                     <div>
                         <button
                         type="submit"
-                        className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                        className="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white secondary-color-bg hover:secondary-color-bg-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                         >
                         Submit
                         </button>
