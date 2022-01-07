@@ -10,7 +10,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        emailjs.sendForm('contact_service', 'template_mizzseu', form.current, 'user_6yw3VTKUnxWHWJFIJuuI9')
+        emailjs.sendForm('contact_service', 'template_mizzseu', form.current, 'user_tWELKPjR62qHcFOOLxqsa')
       .then((result) => {
           console.log(result.text);
           alert("Message sent")

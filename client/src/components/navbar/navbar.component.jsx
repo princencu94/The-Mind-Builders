@@ -3,14 +3,12 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
   MenuIcon,
-  PhoneIcon,
-  PlayIcon,
   SupportIcon,
   XIcon,
 } from '@heroicons/react/outline';
 
 import { ChevronDownIcon } from '@heroicons/react/solid';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo-2.png';
 import { Link, Outlet } from 'react-router-dom';
 
 
@@ -178,7 +176,7 @@ const Navbar = () => {
               <Link to="/">
                 <span className="sr-only">Intercom Staffing</span>
                 <img
-                  className="h-8 w-auto sm:h-10"
+                  className="h-10 w-auto sm:h-16"
                   src={logo}
                   alt=""
                 />
@@ -401,7 +399,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <Link
                 to="/request-new-talent"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white secondary-color-bg hover:secondary-color-bg-8"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-black secondary-color-bg hover:secondary-color-bg-8"
               >
                 Submit Resume
               </Link>

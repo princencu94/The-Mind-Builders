@@ -70,7 +70,7 @@ const ServicesSection = () => {
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center p-3 secondary-color-bg rounded-md shadow-lg">
-                        <feature.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                        <feature.icon className="h-6 w-6 text-black" aria-hidden="true" />
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg font-medium primary-color tracking-tight">{feature.name}</h3>

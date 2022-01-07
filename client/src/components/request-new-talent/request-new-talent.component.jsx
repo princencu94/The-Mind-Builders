@@ -8,7 +8,7 @@ const RequestNewTalentForm = () => {
   const handleSubmit = async (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('contact_service', 'resume_template', form.current, 'user_6yw3VTKUnxWHWJFIJuuI9')
+      emailjs.sendForm('contact_service', 'resume_template', form.current, 'user_tWELKPjR62qHcFOOLxqsa')
       .then((result) => {
           console.log(result.text);
           alert("Message sent")
@@ -20,7 +20,7 @@ const RequestNewTalentForm = () => {
   
     return (
         <div className="container  mx-auto w-1/2 py-16">
-        <form className="space-y-8 divide-y divide-gray-200"enctype="multipart/form-data" ref={form} onSubmit={handleSubmit}>
+        <form className="space-y-8 divide-y divide-gray-200" enctype="multipart/form-data" ref={form} onSubmit={handleSubmit}>
         <div className="space-y-8 divide-y divide-gray-200">
           <div>
             <div>
@@ -242,9 +242,9 @@ const RequestNewTalentForm = () => {
                         <span>Upload a file</span>
                         <input id="file-upload" name="file" type="file" className="sr-only" />
                       </label>
-                      <p className="pl-1">or drag and drop</p>
+                      <p className="pl-1"></p>
                     </div>
-                    <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+                    <p className="text-xs text-gray-500">PDF/Docx/Doc up to 10MB</p>
                   </div>
                 </div>
               </div>

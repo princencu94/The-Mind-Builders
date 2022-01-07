@@ -18,7 +18,7 @@ independent consultants, and third-party staffing options. Our clients benefit f
               <div className="rounded-md shadow">
                 <Link
                   to="/contact-us"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white secondary-color-bg hover:secondary-color-bg-8 md:py-4 md:text-lg md:px-10"
+                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-black secondary-color-bg hover:secondary-color-bg-8 md:py-4 md:text-lg md:px-10"
                 >
                   Get started
                 </Link>
