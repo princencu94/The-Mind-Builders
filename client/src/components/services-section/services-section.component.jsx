@@ -55,10 +55,10 @@ const ServicesSection = () => {
       <div className="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-base font-semibold tracking-wider main-color uppercase">More to choose from</h2>
         <p className="mt-2 text-3xl font-extrabold primary-color tracking-tight sm:text-4xl">
-          Everything about our services
+        Growing companies to epic heights
         </p>
         <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-          We aim to offer high value services to all our clients looking to maximize on the different services we offer
+        We are well established and will continue to connect our clients to talented contributors
         </p>
         <div className="mt-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

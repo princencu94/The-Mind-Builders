@@ -11,8 +11,7 @@ const HeroSection = () => {
               <span className="block main-color xl:inline">Agency</span>
             </h1>
             <p className="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-            Intercom is a national employment agency focused on compliance-oriented staffing. We offer temp staffing, direct hire,
-independent consultants, and third-party staffing options. Our clients benefit from workforce solutions that reduce risks and increase profits
+            Intercom is a national employment agency focused on compliance-oriented staffing. We offer temp staffing, direct hire, independent consultants, and third-party staffing options. Our clients benefit from workforce solutions that reduce risks and increase profits.
             </p>
             <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
