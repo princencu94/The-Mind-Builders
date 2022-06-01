@@ -33,11 +33,11 @@ const aboutIntercom = [
     href: 'competitive-advantages',
     icon: SupportIcon,
   },
-  {
-    name: 'Intercom Team',
-    href: 'our-team',
-    icon: SupportIcon,
-  },
+  // {
+  //   name: 'Intercom Team',
+  //   href: 'our-team',
+  //   icon: SupportIcon,
+  // },
   {
     name: 'Contact Us',
     href: 'contact-us',
@@ -98,21 +98,21 @@ const job = [
     href: 'types-of-staffing',
     icon: SupportIcon,
   },
-  {
-    name: 'Job Search',
-    href: 'job-search',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Submit your Resume',
-    href: 'submit-your-resume',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Emoloyee Recognization program',
-    href: 'employee-recognization-program',
-    icon: SupportIcon,
-  },
+  // {
+  //   name: 'Job Search',
+  //   href: 'job-search',
+  //   icon: SupportIcon,
+  // },
+  // {
+  //   name: 'Submit your Resume',
+  //   href: 'submit-your-resume',
+  //   icon: SupportIcon,
+  // },
+  // {
+  //   name: 'Emoloyee Recognization program',
+  //   href: 'employee-recognization-program',
+  //   icon: SupportIcon,
+  // },
   {
     name: 'Blog',
     href: 'blog',
@@ -126,31 +126,31 @@ const job = [
 ]
 
 const employer = [
-  {
-    name: 'Ebooks',
-    href: 'ebooks',
-    icon: SupportIcon,
-  },
+  // {
+  //   name: 'Ebooks',
+  //   href: 'ebooks',
+  //   icon: SupportIcon,
+  // },
   {
     name: 'Types of Staffing',
     href: 'types-of-staffing',
     icon: SupportIcon,
   },
-  {
-    name: 'Staffing Specialist',
-    href: 'staffing-specialist',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Growth Solutions',
-    href: 'growth-solutions',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Case Studies',
-    href: 'case-studies',
-    icon: SupportIcon,
-  },
+  // {
+  //   name: 'Staffing Specialist',
+  //   href: 'staffing-specialist',
+  //   icon: SupportIcon,
+  // },
+  // {
+  //   name: 'Growth Solutions',
+  //   href: 'growth-solutions',
+  //   icon: SupportIcon,
+  // },
+  // {
+  //   name: 'Case Studies',
+  //   href: 'case-studies',
+  //   icon: SupportIcon,
+  // },
   {
     name: 'Request New Talent',
     href: 'request-new-talent',

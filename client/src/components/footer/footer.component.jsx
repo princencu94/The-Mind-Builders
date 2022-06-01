@@ -11,9 +11,9 @@ const navigation = {
     ],
     job: [
       { name: 'Types of Staffing', href: 'types-of-staffing' },
-      { name: 'Job Search', href: 'job-search' },
-      { name: 'Submit your Resume', href: 'submit-your-resume' },
-      { name: 'Employee Recognization program', href: 'employee-recognization-program' },
+      // { name: 'Job Search', href: 'job-search' },
+      // { name: 'Submit your Resume', href: 'submit-your-resume' },
+      // { name: 'Employee Recognization program', href: 'employee-recognization-program' },
      
     ],
     company: [
@@ -21,15 +21,15 @@ const navigation = {
       { name: 'Compliance is our focus', href: 'compliance-is-our-focus' },
       { name: 'FAQS', href: 'faqs' },
       { name: 'Competitive Advantages', href: 'competitive-advantages' },
-      { name: 'Intercom Team', href: 'our-team' },
+      // { name: 'Intercom Team', href: 'our-team' },
       { name: 'Contact Us', href: 'contact-us' },
     ],
     employer: [
-      { name: 'Ebooks', href: 'ebooks' },
+      // { name: 'Ebooks', href: 'ebooks' },
       { name: 'Types of Staffing', href: 'types-of-staffing' },
-      { name: 'Staffing Specialist', href: 'staffing-specialist' },
-      { name: 'Growth Solutions', href: 'growth-solutions' },
-      { name: 'Case Studies', href: 'case-studies' },
+      // { name: 'Staffing Specialist', href: 'staffing-specialist' },
+      // { name: 'Growth Solutions', href: 'growth-solutions' },
+      // { name: 'Case Studies', href: 'case-studies' },
       { name: 'Request New Talent', href: 'request-new-talent' },
     ],
     social: [
@@ -167,7 +167,7 @@ const Footer = () => {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2021 Intercom Staffing, Inc. All rights reserved.
+            &copy; 2022 Intercom Staffing, Inc. All rights reserved.
           </p>
         </div>
       </div>
