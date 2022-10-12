@@ -8,7 +8,6 @@ const RequestNewTalentPage = () => {
         <div>
             <HeaderBanner heading="Request New Talent"/>
             <RequestNewTalentForm/>
-            <CallToAction/>
             <Footer/>
         </div>
     )

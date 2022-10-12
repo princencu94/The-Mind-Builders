@@ -7,7 +7,7 @@ const StaffTypesPage = () => {
         <div>
             <HeaderBanner heading="Types of Staffing"/>
 
-            <div className="py-16 bg-gray-50 overflow-hidden">
+            <div className="py-16 bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
@@ -34,16 +34,7 @@ const StaffTypesPage = () => {
                                 <li>You can outsource specific marketing needs to our internal digital marketing team, supporting: Search Engine Optimization, Pay-per-Click, Email Marketing, Social Media Marketing, Content Marketing, Mobile Marketing, and Marketing Analytics. The scope of your reach can go way beyond your walls. Let us help you get there!</li>
                             </ol>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+                        
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

@@ -2,13 +2,13 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  MenuIcon,
-  SupportIcon,
-  XIcon,
-} from '@heroicons/react/outline';
+  Bars3Icon,
+  ArrowDownRightIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
 
-import { ChevronDownIcon } from '@heroicons/react/solid';
-import logo from '../../assets/logo-2.png';
+import { ChevronDownIcon } from '@heroicons/react/20/solid';
+import logo from '../../assets/logo-4.png';
 import { Link, Outlet } from 'react-router-dom';
 
 
@@ -16,32 +16,37 @@ const aboutIntercom = [
   {
     name: 'Mission Statement',
     href: 'our-mission',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Compliance is our focus',
     href: 'compliance-is-our-focus',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'FAQS',
     href: 'faqs',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Competitive Advantages',
     href: 'competitive-advantages',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'Our Capabilities',
+    href: 'our-capabilities',
+    icon: ArrowDownRightIcon,
   },
   // {
   //   name: 'Intercom Team',
   //   href: 'our-team',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   {
     name: 'Contact Us',
     href: 'contact-us',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
 ]
 
@@ -49,32 +54,32 @@ const staffing = [
   {
     name: 'Administrative Support',
     href: 'administrative-support',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Finance Accounting',
     href: 'finance-accounting',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Human Resources',
     href: 'human-resources',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Behavioral Healthcare',
     href: 'behavioral-healthcare',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'Healthcare Support',
     href: 'healthcare-support',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: 'IT & Implementation',
     href: 'information-technology',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
 ]
 
@@ -83,12 +88,12 @@ const growth = [
   {
     name: 'Third Party Payroll Solutions',
     href: 'third-party-payroll-solutions',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   {
     name: '1099 Independent Contractor Compliance',
     href: '1099-independent-contractor-compliance',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   }
 ]
 
@@ -96,32 +101,32 @@ const job = [
   {
     name: 'Types of Staffing',
     href: 'types-of-staffing',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
-  // {
-  //   name: 'Job Search',
-  //   href: 'job-search',
-  //   icon: SupportIcon,
-  // },
+  {
+    name: 'Careers',
+    href: 'careers',
+    icon: ArrowDownRightIcon,
+  },
   // {
   //   name: 'Submit your Resume',
   //   href: 'submit-your-resume',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   // {
   //   name: 'Emoloyee Recognization program',
   //   href: 'employee-recognization-program',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
-  {
-    name: 'Blog',
-    href: 'blog',
-    icon: SupportIcon,
-  },
+  // {
+  //   name: 'Blog',
+  //   href: 'blog',
+  //   icon: ArrowDownRightIcon,
+  // },
   {
     name: 'Request New Talent',
     href: 'request-new-talent',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   }
 ]
 
@@ -129,33 +134,64 @@ const employer = [
   // {
   //   name: 'Ebooks',
   //   href: 'ebooks',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   {
     name: 'Types of Staffing',
     href: 'types-of-staffing',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   },
   // {
   //   name: 'Staffing Specialist',
   //   href: 'staffing-specialist',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   // {
   //   name: 'Growth Solutions',
   //   href: 'growth-solutions',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   // {
   //   name: 'Case Studies',
   //   href: 'case-studies',
-  //   icon: SupportIcon,
+  //   icon: ArrowDownRightIcon,
   // },
   {
     name: 'Request New Talent',
     href: 'request-new-talent',
-    icon: SupportIcon,
+    icon: ArrowDownRightIcon,
   }
+]
+
+const companies = [
+
+  
+  {
+    name: 'CitiFreedom',
+    href: '#',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'Cyber Divers',
+    href: '#',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'Gold Improv',
+    href: '#',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'The Task Collectors',
+    href: '#',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'UpMySalary.Com',
+    href: 'upmysalary.com/',
+    icon: ArrowDownRightIcon,
+  },
+ 
 ]
 
 
@@ -176,16 +212,16 @@ const Navbar = () => {
               <Link to="/">
                 <span className="sr-only">Intercom Staffing</span>
                 <img
-                  className="h-10 w-auto sm:h-16"
+                  className="h-16 w-auto sm:h-16"
                   src={logo}
-                  alt=""
+                  alt="Intercom Staffing Logo"
                 />
               </Link>
             </div>
             <div className="-mr-2 -my-2 md:hidden">
-              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center primary-color hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:main-color">
+              <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-black hover:text-gray-500 hover:bg-gray-100">
                 <span className="sr-only">Open menu</span>
-                <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
             <Popover.Group as="nav" className="hidden md:flex space-x-10">
@@ -194,14 +230,14 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:main-color'
+                        open ? 'text-gray-900' : 'text-black',
+                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
                       )}
                     >
-                      <span className="primary-color">About Intercom</span>
+                      <span className="text-black">About Intercom</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'primary-color',
+                          open ? 'text-yellow-300' : 'text-black',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -217,7 +253,7 @@ const Navbar = () => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 translate-y-1"
                     >
-                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-10 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-50 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {aboutIntercom.map((item) => (
@@ -226,7 +262,7 @@ const Navbar = () => {
                                 to={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-300" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 </div>
@@ -245,14 +281,14 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'text-gray-500',
-                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        open ? 'text-gray-900' : 'text-black',
+                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
                       )}
                     >
-                      <span className="primary-color">Staffing Specialties</span>
+                      <span className="text-black">Staffing Specialties</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'primary-color',
+                          open ? 'text-yellow-300' : 'text-black',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -268,7 +304,7 @@ const Navbar = () => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 translate-y-1"
                     >
-                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-10 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-50 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {staffing.map((item) => (
@@ -277,7 +313,7 @@ const Navbar = () => {
                                 to={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-300" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 </div>
@@ -296,14 +332,14 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'primary-color',
-                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        open ? 'text-gray-900' : 'text-black',
+                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
                       )}
                     >
-                      <span className="primary-color">Growth Solutions</span>
+                      <span className="text-black">Growth Solutions</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'primary-color',
+                          open ? 'text-yellow-300' : 'text-black',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -319,7 +355,7 @@ const Navbar = () => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 translate-y-1"
                     >
-                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-10 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-50 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {growth.map((item) => (
@@ -328,7 +364,7 @@ const Navbar = () => {
                                 to={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-300" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 </div>
@@ -348,14 +384,14 @@ const Navbar = () => {
                   <>
                     <Popover.Button
                       className={classNames(
-                        open ? 'text-gray-900' : 'primary-color',
-                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                        open ? 'text-gray-900' : 'text-black',
+                        'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900'
                       )}
                     >
-                      <span className="primary-color">Job Seeker</span>
+                      <span className="text-black">Job Seeker</span>
                       <ChevronDownIcon
                         className={classNames(
-                          open ? 'text-gray-600' : 'text-gray-400',
+                          open ? 'text-yellow-300' : 'text-black',
                           'ml-2 h-5 w-5 group-hover:text-gray-500'
                         )}
                         aria-hidden="true"
@@ -371,7 +407,7 @@ const Navbar = () => {
                       leaveFrom="opacity-100 translate-y-0"
                       leaveTo="opacity-0 translate-y-1"
                     >
-                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-10 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <Popover.Panel className="absolute -ml-4 mt-3 transform z-50 px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                         <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                           <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                             {job.map((item) => (
@@ -380,7 +416,7 @@ const Navbar = () => {
                                 to={item.href}
                                 className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                               >
-                                <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-300" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 </div>
@@ -394,12 +430,13 @@ const Navbar = () => {
                 )}
               </Popover>
 
+
                             
             </Popover.Group>
             <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
               <Link
                 to="/request-new-talent"
-                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-black secondary-color-bg hover:secondary-color-bg-8"
+                className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-black bg-yellow-300 hover:secondary-color-bg-8"
               >
                 Submit Resume
               </Link>
@@ -418,7 +455,7 @@ const Navbar = () => {
         >
           <Popover.Panel
             focus
-            className="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
+            className="absolute top-0 inset-x-0 z-50 p-2 transition transform origin-top-right md:hidden"
           >
             <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
               <div className="pt-5 pb-6 px-5">
@@ -431,9 +468,9 @@ const Navbar = () => {
                     />
                   </div>
                   <div className="-mr-2">
-                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100   focus:ring-indigo-500">
                       <span className="sr-only">Close menu</span>
-                      <XIcon className="h-6 w-6" aria-hidden="true" />
+                      <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
@@ -445,7 +482,7 @@ const Navbar = () => {
                         to={item.href}
                         className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50"
                       >
-                        <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                        <item.icon className="flex-shrink-0 h-6 w-6 text-yellow-300" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
                       </Link>
                     ))}

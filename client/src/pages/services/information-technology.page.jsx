@@ -108,7 +108,7 @@ const InformationTechnologyPage = () => {
                         <p>
                             For over a decade, through our partnership with a strong IT staffing firm, we’ve been staffing help desk analysts and help desk support staff, developers and system engineers. Partnering with some of the nation’s most trusted information technology staffing agencies, Intercom supports every facet of IT – from multi-platform support of operating systems and applications to cyber security initiatives that protect networks and data from dangerous breach and virus infiltration.
                         </p>
-                        <h3>If you are a techie who’s looking to support the success of Uniforce clients, let’s connect. </h3>
+                        <h3>If you are a techie who’s looking to support the success of Intercom clients, let’s connect. </h3>
                         <p>
                         In the 21st century, if you’re breathing, you’re concerned about internet security.
 Over the past few years, nothing has been a higher priority to Unforce than IT security staffing for our valued clients. From IT security architects and analysts to IT security engineers, we have staffing solutions to support the cyber security initiatives of your company. Cyber security is evolving quickly. The following roles and responsibilities are a partial representation of the many that exist currently:
@@ -119,24 +119,15 @@ Over the past few years, nothing has been a higher priority to Unforce than IT s
                         </p>
                         <p>
                         Knowledge of basic IT security and cybersecurity technologies, including Windows clients and servers, various routers, firewalls, storage, PKI, SSO, IdAM and others.
-Analyze system findings across networks and domains.
-Knowledge of various cybersecurity tools and solutions.
+                        Analyze system findings across networks and domains.
+                        Knowledge of various cybersecurity tools and solutions.
                         </p>
                         <h3>Intercom techies are ready to help. </h3>
                         <p>
-                            Uniforce IT professionals hold a tremendous variety of educational achievements, qualifications and certifications. Some of the more popular certifications held include: CISSP, CISM, CCNA, ITIL, A+ Certified and MCSE.
+                            Intercom IT professionals hold a tremendous variety of educational achievements, qualifications and certifications. Some of the more popular certifications held include: CISSP, CISM, CCNA, ITIL, A+ Certified and MCSE.
                         </p>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="/contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+                        
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

@@ -63,18 +63,18 @@ const TwoColumns = () => {
                     <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                     <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
                         <p>
-                            A corporate headcount freeze is in place, but your department is profitable and growing. Uniforce third party staffing solutions helps you maintain growth and corporate compliance. Your company can on board new employees without ever having to put them on your payroll. Let Uniforce handle the W-2 Employer relationship.
+                            A corporate headcount freeze is in place, but your department is profitable and growing. Intercom third party staffing solutions helps you maintain growth and corporate compliance. Your company can on board new employees without ever having to put them on your payroll. Let Intercom handle the W-2 Employer relationship.
                         </p>
                         <p>
-                            Multi-state payroll and compliance challenges may hamper your company and slow progress, as additional resources are expended to address different state laws and regulations. Uniforce provides a singular outsourced staffing option with a simplified solution by becoming the employer for the new hire in the newly set up state.
+                            Multi-state payroll and compliance challenges may hamper your company and slow progress, as additional resources are expended to address different state laws and regulations. Intercom provides a singular outsourced staffing option with a simplified solution by becoming the employer for the new hire in the newly set up state.
                         </p> 
                     </div>
                     <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
                         <p>
-                            Your risk averse company is concerned about remote worker compliance, and for good reason. It’s not uncommon that companies who rely on remote workers are held responsible by taxing authorities and regulators when those individuals lack compliance. Let Uniforce manage compliance of this skilled and highly scalable workforce solution for you by becoming the licensed W-2 employer for that remote employee.
+                            Your risk averse company is concerned about remote worker compliance, and for good reason. It’s not uncommon that companies who rely on remote workers are held responsible by taxing authorities and regulators when those individuals lack compliance. Let Intercom manage compliance of this skilled and highly scalable workforce solution for you by becoming the licensed W-2 employer for that remote employee.
                         </p>
                         <p>
-                        Your growing company needs to add workforce in order to sustain growth, but the costs associated with ACA compliance threaten your ability to remain profitable, and you are approaching a critical staffing threshold. Uniforce has the third party payroll solution. Let Uniforce become the employer of record. Our company has the scalability to offer ACA compliant major health benefits to those much needed employees. Your employees are happy and you can grow accordingly.
+                        Your growing company needs to add workforce in order to sustain growth, but the costs associated with ACA compliance threaten your ability to remain profitable, and you are approaching a critical staffing threshold. Intercom has the third party payroll solution. Let Intercom become the employer of record. Our company has the scalability to offer ACA compliant major health benefits to those much needed employees. Your employees are happy and you can grow accordingly.
                         </p>
                     </div>
                     </div>
@@ -145,10 +145,10 @@ const TwoColumns2 = () => {
                     <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                     <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
                         <p>
-                            Any good carpenter will tell, “measure twice, cut once.” The same is true with taking on business growth strategies that are unproven. One of the best ways to reduce the risks associated with new initiatives is to put in place staffing budget controls. Uniforce will provide a third party payroll solution that fits your budget, with no surprises.
+                            Any good carpenter will tell, “measure twice, cut once.” The same is true with taking on business growth strategies that are unproven. One of the best ways to reduce the risks associated with new initiatives is to put in place staffing budget controls. Intercom will provide a third party payroll solution that fits your budget, with no surprises.
                         </p>
                         <p>
-                            Like beginning any new projects, adding a new employee, whether brought in as a temp or a direct hire, is an experiment in team chemistry. Even with diligent vetting, in certain situations, work performance can be extremely challenging to predict until an employee begins interacting with others and taking on tasks. For this reason, many Uniforce clients embrace third party payroll solutions. 
+                            Like beginning any new projects, adding a new employee, whether brought in as a temp or a direct hire, is an experiment in team chemistry. Even with diligent vetting, in certain situations, work performance can be extremely challenging to predict until an employee begins interacting with others and taking on tasks. For this reason, many Intercom clients embrace third party payroll solutions. 
                         </p> 
                         <p>
                             Our third party payroll solutions include great flexibility, allowing your company to try candidates in a variety of roles, including part-time and full-time staffing. Best of all, when you find a proven, indispensable team player, your company may extend an employment offer, to add the individual to your internal payroll, for a potential long-term position with company benefits at no conversion fee.
@@ -156,10 +156,10 @@ const TwoColumns2 = () => {
                     </div>
                     <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
                         <p>
-                        Evaluate new hires before you extend the full time staff offer. Let Uniforce handle the W-2 Employer relationship as a temp-to-hire. You find the employee and Uniforce puts them on our payroll. Recall experienced retirees. What do you do when an employee wants to retire, collect retirement funds, and return to work Part-Time? Employees cannot withdraw their Pension/401k retirement until they resign.
+                        Evaluate new hires before you extend the full time staff offer. Let Intercom handle the W-2 Employer relationship as a temp-to-hire. You find the employee and Intercom puts them on our payroll. Recall experienced retirees. What do you do when an employee wants to retire, collect retirement funds, and return to work Part-Time? Employees cannot withdraw their Pension/401k retirement until they resign.
                         </p>
                         <p>
-                        Bring those specialized workers back on Uniforce’s payroll. Same employee. New employer. Good to go. Why spend the time and money on boarding Summer Interns and Part-Time employees as in-house employees? Human Resources doesn’t need the headache of maintaining an employee census that has a seasonal workforce. Let Uniforce handle the reporting and the W-2 Employer relationship for the Interns and Part-Timers. Your company handles the full time staff.
+                        Bring those specialized workers back on Intercom’s payroll. Same employee. New employer. Good to go. Why spend the time and money on boarding Summer Interns and Part-Time employees as in-house employees? Human Resources doesn’t need the headache of maintaining an employee census that has a seasonal workforce. Let Intercom handle the reporting and the W-2 Employer relationship for the Interns and Part-Timers. Your company handles the full time staff.
                         </p>
                     </div>
                     </div>
@@ -180,7 +180,7 @@ const PayrollPage = () => {
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
-                        Third party payroll offers an intelligent workforce strategy for Uniforce clients to address any number of exciting business opportunities.
+                        Third party payroll offers an intelligent workforce strategy for Intercom clients to address any number of exciting business opportunities.
                     </p>
                     </div>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
@@ -194,19 +194,10 @@ const PayrollPage = () => {
                         </p>
                         <h3>Medical record keeping is of paramount importance.</h3>
                         <p>
-                            Coordinating with clinical staff, front office and billing professionals, medical record clerks are often at the hub of back office activity. Uniforce offers medical record staffing solutions to ensure that patient information is handled with care for compliance, security and accuracy. Medical record clerks assign and record new records, verify existing record numbers, promptly deliver records when needed and maintain a systemized directory. A skilled medical record professional is responsible for maintaining a master index of all patients, establishing processes and procedures for record interaction and performs audits of record keeping compliance with medical industry best practices.
+                            Coordinating with clinical staff, front office and billing professionals, medical record clerks are often at the hub of back office activity. Intercom offers medical record staffing solutions to ensure that patient information is handled with care for compliance, security and accuracy. Medical record clerks assign and record new records, verify existing record numbers, promptly deliver records when needed and maintain a systemized directory. A skilled medical record professional is responsible for maintaining a master index of all patients, establishing processes and procedures for record interaction and performs audits of record keeping compliance with medical industry best practices.
                         </p>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+                        
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

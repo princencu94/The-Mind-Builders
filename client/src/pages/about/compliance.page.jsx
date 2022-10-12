@@ -51,7 +51,7 @@ const Compliance = () => {
                     </div>
                     <div className="mt-8 lg:mt-0">
                         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                        <p className="text-2xl text-gray-500">
+                        <p className="text-2xl text-black">
                             Our client’s staffing needs may vary, but one commonality that’s present in each Intercom solution is a focus on compliance.
                         </p>
                         </div>

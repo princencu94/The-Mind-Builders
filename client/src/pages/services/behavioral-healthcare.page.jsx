@@ -64,7 +64,7 @@ const TwoColumns = () => {
                     <div className="lg:grid lg:grid-cols-2 lg:gap-6">
                     <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
                         <p>
-                            Licensed Practical Nurses (LPNs) are in high demand do our nation’s growing healthcare needs. Uniforce maintains a healthy network of compassionate and experienced LPNs seeking temp work in clinical settings. “Organized, competent, compassionate, communicative, tolerant and talented.” These are the attributes we hear most often in the form of compliments for the licensed nurse staff we place.</p>
+                            Licensed Practical Nurses (LPNs) are in high demand do our nation’s growing healthcare needs. Intercom maintains a healthy network of compassionate and experienced LPNs seeking temp work in clinical settings. “Organized, competent, compassionate, communicative, tolerant and talented.” These are the attributes we hear most often in the form of compliments for the licensed nurse staff we place.</p>
                         <p>
                             The LPNs we place are self-starters and highly trained in the basics, like taking vital signs, compiling health information, updating records, taking blood pressure, administering the use of catheters, oxygen suppliers and other frequently used medical equipment. Additionally, LPNs are adept at supervising nursing assistants and nursing aides. Running the spectrum of infant care to geriatric support, Intercom has the dependable staff available to bolster your clinical setting.
                         </p>
@@ -130,16 +130,7 @@ const Behavioralhealthcare = () => {
                             If your clinical healthcare business is in need of a Clinical Research Coordinator (CRC), Intercom can find you a matching employee candidate who suits your requirements. Our staffing agency is experienced in providing CRC candidates who are adept at planning and coordinated strategies for maximizing research participant enrollment, training personnel and identifying new research opportunities. Clinical research coordinators establish the protocol eligibility and screen participants to determine qualifications for participation. CRCs are responsible for accuracy of research structure and timeliness of preparing documentation for review, and submitting findings to sponsors. Compliance with local and federal agencies, including the FDA and Institutional Review Board (IRB) are to be expected.
                         </p>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="/contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+                        
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

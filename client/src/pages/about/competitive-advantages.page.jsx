@@ -1,15 +1,15 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
-import { ExternalLinkIcon } from '@heroicons/react/solid';
-import { CheckIcon } from '@heroicons/react/outline';
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
+import { CheckIcon } from '@heroicons/react/24/outline';
 
 import { Link } from 'react-router-dom';
 
 const ProcessSection = () => {
     return (
-        <div className="relative bg-gray-800">
-            <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <div className="relative bg-black">
+            <div className="h-56 bg-yellow-300 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
                 <img
                 className="w-full h-full object-cover"
                 src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6366F1&sat=-100&blend-mode=multiply"
@@ -24,13 +24,13 @@ const ProcessSection = () => {
                     We don’t mind giving away our secret sauce. More than what we do, it’s the manner in which we do it that makes Intercom special.
                 </p>
                 <div className="mt-8">
-                    <div className="inline-flex rounded-md shadow">
+                    <div className="inline-flex rounded-full shadow">
                     <Link
                         to="/contact-us"
-                        className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-50"
+                        className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-black bg-yellow-300 hover:bg-gray-50"
                     >
                         Contact Us
-                        <ExternalLinkIcon className="-mr-1 ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
+                        <ArrowTopRightOnSquareIcon className="-mr-1 ml-3 h-5 w-5 text-black" aria-hidden="true" />
                     </Link>
                     </div>
                 </div>
@@ -106,7 +106,7 @@ const Features = () => {
             <div className="bg-white">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-base font-semibold uppercase tracking-wider text-black-300">INTERCOM HIGH-QUALITY STAFFING</h2>
+                    <h2 className="text-base font-semibold uppercase tracking-wider text-yellow-300">INTERCOM HIGH-QUALITY STAFFING</h2>
                     <p className="mt-2 text-black text-3xl font-extrabold tracking-tight sm:text-4xl">
                     Recruitment Process
                     </p>
@@ -115,8 +115,8 @@ const Features = () => {
                     {features.map((feature) => (
                         <div key={feature.name} className="relative">
                         <dt>
-                            <CheckIcon className="absolute h-6 w-6 text-green-500" aria-hidden="true" />
-                            <p className="ml-9 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                            <CheckIcon className="absolute h-6 w-6 text-yellow-300" aria-hidden="true" />
+                            <p className="ml-9 text-lg leading-6 font-medium text-black">{feature.name}</p>
                         </dt>
                         <dd className="mt-2 ml-9 text-base text-gray-500">
                             {feature.description}
@@ -129,7 +129,7 @@ const Features = () => {
             <div className="bg-gray-100">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
                     <div className="max-w-3xl mx-auto text-center">
-                    <h2 className="text-base font-semibold uppercase tracking-wider text-black-300">INTERCOM HIGH-QUALITY STAFFING</h2>
+                    <h2 className="text-base font-semibold uppercase tracking-wider text-yellow-300">INTERCOM HIGH-QUALITY STAFFING</h2>
                     <p className="mt-2 text-black text-3xl font-extrabold tracking-tight sm:text-4xl">
                         Client Service Commitment 
                     </p>
@@ -138,7 +138,7 @@ const Features = () => {
                     {features2.map((feature) => (
                         <div key={feature.id} className="relative">
                         <dt>
-                            <CheckIcon className="absolute h-6 w-6 text-green-500" aria-hidden="true" />
+                            <CheckIcon className="absolute h-6 w-6 text-yellow-300" aria-hidden="true" />
                             <p className="ml-9 text-base leading-6 font-medium text-gray-500">{feature.description}</p>
                         </dt>
 
@@ -200,7 +200,7 @@ const CompetitiveAdvantages = () => {
                     </div>
                     <div className="mt-8 lg:mt-0">
                         <div className="text-base max-w-prose mx-auto lg:max-w-none">
-                            <p className="text-2xl text-gray-500">
+                            <p className="text-2xl text-black">
                                 Simply stated, there are two reasons that Intercom is considered the very best scaling staffing company by our clients and employees: Backend Support & Engagement.
                             </p>
                         </div>

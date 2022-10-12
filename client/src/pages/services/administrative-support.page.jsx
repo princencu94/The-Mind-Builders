@@ -74,7 +74,7 @@ const TwoColumns = () => {
                     From temps to direct hire employees, our goal is to protect our clients and reduce the risks associated with industry-specific regulations and compliance. Intercom healthcare administrative support personnel are familiar with patient privacy issues related to HIPAA-compliance and many are experienced with JCAHO audits and best practices.
                 </p>
                 <p>
-                    Uniforce admin support staff who work in legal offices, accounting firms and financial institutions are also cognitive of the privacy concerns, regulations, guidelines and risk factors that must be considered as well. Our pledge is to ensure that our pairing of skills leaves every workplace more efficient and more compliant.
+                    Intercom admin support staff who work in legal offices, accounting firms and financial institutions are also cognitive of the privacy concerns, regulations, guidelines and risk factors that must be considered as well. Our pledge is to ensure that our pairing of skills leaves every workplace more efficient and more compliant.
                 </p>
               </div>
             </div>
@@ -114,16 +114,7 @@ const AdministrativeSupportPage = () => {
                             Administrative assistants provide clerical support for any number of office staff, often including an office manager. A qualified administrative assistant is prepared to support the needs of multiple supervisors and act as receptionist as needed. Administrative assistants must possess strong organizational skills, particularly with regard to standard computer applications and filing. Intercom administrative assistants are also expected to provide support with research and project coordination, including the interpersonal skills required to clearly communicate with management, clients, customers and vendors alike.
                         </p>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="/contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+                        
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

@@ -1,5 +1,5 @@
 import { Disclosure } from '@headlessui/react'
-import { ChevronDownIcon } from '@heroicons/react/outline'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
@@ -43,7 +43,7 @@ const Faqs = () => {
     return (
         <div>
             <HeaderBanner heading="Frequently Asked Questions" />
-            <div className="bg-gray-50">
+            <div className="bg-white">
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
                     <dl className="mt-6 space-y-6 divide-y divide-gray-200">

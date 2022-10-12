@@ -201,16 +201,7 @@ const ContractorPage = () => {
                             W2 vs. 1099 refers to the difference in tax forms, with employees being W-2 form recipients and independent contractors each receiving a 1099. According to taxing authorities, whether or not the working relationship is consistent with how each type of worker is defined dictates compliance. W-2 employees have payroll taxes deducted by their employer, who pays the government on the employee’s behalf. Contractors are responsible for their own payroll taxes and expected to submit their own payments to the government.
                         </p>
                         </div>
-                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
-                        <div className="rounded-md shadow">
-                            <Link
-                            to="/contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
-                            >
-                                Contact Us
-                            </Link>
-                        </div>
-                        </div>
+
                     </div>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg

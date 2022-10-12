@@ -257,7 +257,7 @@ const RequestNewTalentForm = () => {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-black secondary-color-bg hover:secondary-color-bg-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="ml-3 inline-flex justify-center py-3 px-16 border border-transparent shadow-sm text-sm font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-400 "
             >
               Submit
             </button>

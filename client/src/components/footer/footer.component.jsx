@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import FooterBG from '../../assets/footer-bg.jpg';
 
 const navigation = {
     staffing: [
@@ -66,20 +68,28 @@ const navigation = {
 const Footer = () => {
     return (
       <div>
-    <footer className="bg-white" aria-labelledby="footer-heading">
+    <footer className="relative" aria-labelledby="footer-heading">
+    <div className="absolute inset-0">
+        <img
+          className="h-full w-full object-cover"
+          src={FooterBG}
+          alt=""
+        />
+        <div className="absolute inset-0 bg-gray-700 mix-blend-multiply" aria-hidden="true" />
+      </div>
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+      <div className=" relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Staffing Specialists</h3>
+                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Staffing Specialists</h3>
                 <ul role="list" className="mt-4 space-y-4">
                   {navigation.staffing.map((item) => (
                     <li key={item.name}>
-                      <Link to={ `/${item.href}` } className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={ `/${item.href}` } className="text-base text-gray-300 hover:text-gray-400">
                         {item.name}
                       </Link>
                     </li>
@@ -87,11 +97,11 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Job Seeker</h3>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Company</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.job.map((item) => (
+                  {navigation.company.map((item) => (
                     <li key={item.name}>
-                      <Link to={ `/${item.href}` } className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={ `/${item.href}` } className="text-base text-gray-300 hover:text-gray-400">
                         {item.name}
                       </Link>
                     </li>
@@ -101,11 +111,11 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Company</h3>
+                <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Employer</h3>
                 <ul role="list" className="mt-4 space-y-4">
-                  {navigation.company.map((item) => (
+                  {navigation.employer.map((item) => (
                     <li key={item.name}>
-                      <Link to={ `/${item.href}` } className="text-base text-gray-500 hover:text-gray-900">
+                      <Link to={ `/${item.href}` } className="text-base text-gray-300 hover:text-gray-400">
                         {item.name}
                       </Link>
                     </li>
@@ -113,66 +123,54 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">Employer</h3>
-                <ul role="list" className="mt-4 space-y-4">
-                  {navigation.employer.map((item) => (
-                    <li key={item.name}>
-                      <Link to={ `/${item.href}` } className="text-base text-gray-500 hover:text-gray-900">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                {/* PlaceHolder */}
               </div>
             </div>
           </div>
           <div className="mt-8 xl:mt-0">
-            <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-              Subscribe to our newsletter
-            </h3>
-            <p className="mt-4 text-base text-gray-500">
-              The latest news, articles, and resources, sent to your inbox weekly.
-            </p>
-            <form className="mt-4 sm:flex sm:max-w-md">
-              <label htmlFor="email-address" className="sr-only">
-                Email address
-              </label>
-              <input
-                type="email"
-                name="email-address"
-                id="email-address"
-                autoComplete="email"
-                required
-                className="appearance-none min-w-0 w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
-                placeholder="Enter your email"
-              />
-              <div className="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button
-                  type="submit"
-                  className="w-full secondary-color-bg flex items-center justify-center border border-transparent rounded-md py-2 px-4 text-base font-medium text-black hover:bg-indigo-700 focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  Subscribe
-                </button>
+              <h3 className="text-sm font-semibold text-white tracking-wider uppercase">Contact Us</h3>
+              <dl className="mt-5 text-base text-gray-300">
+              <div>
+                <dt className="sr-only">Postal address</dt>
+                <dd>
+                  <p>7715 Crittenden St,</p>
+                  <p>Philadelphia, PA 19118</p>
+                </dd>
               </div>
-            </form>
+              <div className="mt-6">
+                <dt className="sr-only">Phone number</dt>
+                <dd className="flex">
+                  <PhoneIcon className="h-6 w-6 flex-shrink-0 text-gray-300" aria-hidden="true" />
+                  <span className="ml-3">267-900-7922</span>
+                </dd>
+              </div>
+              <div className="mt-3">
+                <dt className="sr-only">Email</dt>
+                <dd className="flex">
+                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-300" aria-hidden="true" />
+                  <span className="ml-3">info@intercomstaffing.com</span>
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between">
-          <div className="flex space-x-6 md:order-2">
-            {navigation.social.map((item) => (
-              <Link key={item.name} to={item.href} className="text-gray-400 hover:text-gray-500">
-                <span className="sr-only">{item.name}</span>
-                <item.icon className="h-6 w-6" aria-hidden="true" />
-              </Link>
-            ))}
-          </div>
-          <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; 2022 Intercom Staffing, Inc. All rights reserved.
-          </p>
-        </div>
+        
       </div>
      
-    </footer>      
+    </footer>  
+    <div className="mt-0 bg-yellow-300 border-t border-white pt-8 md:flex md:items-center md:justify-between sm:px-6 lg:py-5 lg:px-8">
+          <div className="flex space-x-6 md:order-2">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} target="_blank" className="text-black hover:text-gray-500">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+          <p className="mt-8 text-base text-black md:mt-0 md:order-1">
+            &copy; 2022 Intercom Staffing, Inc. All rights reserved.
+          </p>
+        </div>    
     </div>
     )
 }
