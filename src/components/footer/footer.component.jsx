@@ -31,7 +31,7 @@ const navigation = {
       { name: 'Types of Staffing', href: 'types-of-staffing' },
       // { name: 'Staffing Specialist', href: 'staffing-specialist' },
       // { name: 'Growth Solutions', href: 'growth-solutions' },
-      // { name: 'Case Studies', href: 'case-studies' },
+      { name: 'Careers', href: 'careers' },
       { name: 'Request New Talent', href: 'request-new-talent' },
     ],
     social: [

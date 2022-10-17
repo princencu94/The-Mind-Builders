@@ -5,12 +5,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top.component';
+import { Toaster } from 'react-hot-toast';
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
         <ScrollToTop/>
-        <App />
+        <Toaster position="top-right"/>
+          <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

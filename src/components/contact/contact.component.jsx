@@ -1,23 +1,70 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
-
+import { useFormik } from 'formik';
+import Spinner from '../../assets/spinner.svg';
+import toast from 'react-hot-toast';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 
 
+const validate = values => {
+
+    const errors = {};
+ 
+    if (!values.fullname) {
+      errors.fullname = 'Required*';
+    } 
+
+    // if (!values.lookingfor) {
+    //     errors.lookingfor = 'Required';
+    // } 
+
+    if (!values.phone) {
+        errors.phone = 'Required*';
+      } 
+ 
+    if (!values.message) {
+      errors.message = 'Required*';
+    }
+ 
+    if (!values.email) {
+      errors.email = 'Required*';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+      errors.email = 'Invalid email address';
+    }
+    return errors;
+ 
+};
 
 const Contact = () => {
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
     const form = useRef();
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        emailjs.sendForm('contact_service', 'template_mizzseu', form.current, 'user_tWELKPjR62qHcFOOLxqsa')
-      .then((result) => {
-          console.log(result.text);
-          alert("Message sent")
-      }, (error) => {
-          console.log(error.text);
+    const formik = useFormik({
+
+        initialValues: {
+          fullname:'',
+          email: '',
+          phone: '',
+          message: '',
+        
+   
+        },
+        validate,
+        onSubmit: values => {
+            setIsSubmitting(true);
+            emailjs.sendForm('contact_service', 'template_mizzseu', form.current, '5yp609nAmXIULb-Yf')
+            .then((result) => {
+                toast.success('Email Has been sent!');
+                setIsSubmitting(false);
+            }, (error) => {
+                console.log(error.text);
+            });
+        },
+   
       });
-    }
+
+    
               
 
     return (
@@ -60,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
                 <div className="max-w-lg mx-auto lg:max-w-none">
-                    <form ref={form} onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6">
+                    <form ref={form} onSubmit={formik.handleSubmit} className="grid grid-cols-1 gap-y-6">
                     <div>
                         <label htmlFor="full-name" className="sr-only">
                         Full name
@@ -69,10 +116,15 @@ const Contact = () => {
                         type="text"
                         name="fullname"
                         id="full-name"
-                        autoComplete="name"
-                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.fullname}
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-300 focus:border-yellow-300 border-gray-300 rounded-md"
                         placeholder="Full name"
                         />
+                        {formik.touched.fullname && formik.errors.fullname ? (
+                        <div><p className="text-red-600 text-sm">{formik.errors.fullname}</p></div>
+                        ) : null}
                     </div>
                     <div>
                         <label htmlFor="email" className="sr-only">
@@ -82,10 +134,15 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        autoComplete="email"
-                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.email}
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-300 focus:border-yellow-300 border-gray-300 rounded-md"
                         placeholder="Email"
                         />
+                        {formik.touched.email && formik.errors.email ? (
+                        <div><p className="text-red-600 text-sm">{formik.errors.email}</p></div>
+                        ) : null}
                     </div>
                     <div>
                         <label htmlFor="phone" className="sr-only">
@@ -95,10 +152,15 @@ const Contact = () => {
                         type="text"
                         name="phone"
                         id="phone"
-                        autoComplete="tel"
-                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.phone}
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-300 focus:border-yellow-300 border-gray-300 rounded-md"
                         placeholder="Phone"
                         />
+                        {formik.touched.phone && formik.errors.phone ? (
+                        <div><p className="text-red-600 text-sm">{formik.errors.phone}</p></div>
+                        ) : null}
                     </div>
                     <div>
                         <label htmlFor="message" className="sr-only">
@@ -108,16 +170,26 @@ const Contact = () => {
                         id="message"
                         name="message"
                         rows={4}
-                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                        className="block w-full shadow-sm py-3 px-4 placeholder-gray-500 focus:ring-yellow-300 focus:border-yellow-300 border border-gray-300 rounded-md"
                         placeholder="Message"
-                        defaultValue={''}
+                        onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
+                        value={formik.values.message}
                         />
+                        {formik.touched.message && formik.errors.message ? (
+                        <div><p className="text-red-600 text-sm">{formik.errors.message}</p></div>
+                        ) : null}
                     </div>
                     <div>
                         <button
                         type="submit"
                         className="inline-flex justify-center py-3 px-10 border border-transparent shadow-sm text-base font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-400 "
                         >
+                            {
+                                isSubmitting ?
+                                <img src={Spinner} className="-ml-0.5 mr-2 h-4 w-4" alt="Spinner"/>
+                                : null
+                            }  
                         Submit
                         </button>
                     </div>

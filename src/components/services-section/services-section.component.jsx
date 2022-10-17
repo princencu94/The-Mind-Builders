@@ -9,6 +9,7 @@ import {
   } from '@heroicons/react/24/outline'
   
   import { Link } from 'react-router-dom';
+  import Fade from 'react-reveal/Fade';
 
   import ContactSvg from '../../assets/contact.svg';
 
@@ -53,7 +54,7 @@ const features = [
 
 const ServicesSection = () => {
     return (
-      <div className="overflow-hidden bg-gray-50">
+      <div className="overflow-hidden bg-white " id="services">
         <div className="relative mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
           
             <img className="absolute top-0 left-full -translate-x-1/2 -translate-y-3/4 transform lg:left-auto lg:right-full lg:translate-x-2/3 lg:translate-y-1/4" src={ContactSvg} alt="Contact" />
@@ -61,11 +62,14 @@ const ServicesSection = () => {
           
           <div className="relative py-10 lg:grid lg:grid-cols-3 lg:gap-x-8">
             <div className="lg:col-span-1">
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Growing Companies to Epic Heights</h2>
-              <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                  We are well established and will continue to connect our clients to talented contributors
-              </p>
+            <Fade clear>
+                <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Growing Companies to Epic Heights</h2>
+                <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+                    We are well established and will continue to connect our clients to talented contributors
+                </p>
+              </Fade>
             </div>
+            <Fade clear>
             <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0">
               {features.map((feature) => (
                 <Link  to={feature.href}>
@@ -81,6 +85,7 @@ const ServicesSection = () => {
                 </Link>
               ))}
             </dl>
+            </Fade>
           </div>
         </div>
       </div>

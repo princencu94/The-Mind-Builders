@@ -3,6 +3,8 @@ import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
 import { CheckIcon } from '@heroicons/react/24/outline';
+import Slide from 'react-reveal/Slide';
+import CompetitiveImage from '../../assets/competitive.jpg';
 
 import { Link } from 'react-router-dom';
 
@@ -162,6 +164,7 @@ const CompetitiveAdvantages = () => {
                     <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
                     <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                     <div className="relative lg:row-start-1 lg:col-start-2">
+                    <Slide right>
                         <svg
                         className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
                         width={404}
@@ -189,16 +192,18 @@ const CompetitiveAdvantages = () => {
                             <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                             <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                                alt="Whitney leaning against a railing on a downtown street"
+                                src={CompetitiveImage}
+                                alt="Chess board"
                                 width={1184}
                                 height={1376}
                             />
                             </div>
                         </figure>
                         </div>
+                        </Slide>
                     </div>
                     <div className="mt-8 lg:mt-0">
+                        <Slide bottom>
                         <div className="text-base max-w-prose mx-auto lg:max-w-none">
                             <p className="text-2xl text-black">
                                 Simply stated, there are two reasons that Intercom is considered the very best scaling staffing company by our clients and employees: Backend Support & Engagement.
@@ -212,14 +217,17 @@ const CompetitiveAdvantages = () => {
                             The quality we’ve gained by way of experience is an important differentiator, but it’s our commitment level that’s cited most often by satisfied clients and employees. You may find any number of staffing agencies that tout their commitment to client satisfactions, but at Intercom, we credit our stellar reputation with our commitment to satisfying employees. After all, it’s human relationships that drive business success.
                         </p>
                         </div>
+                        </Slide>
                     </div>
                     </div>
                 </div>
                 </div>
+                <Slide bottom>
                 <ProcessSection/>
                 <Features/>
                 <CallToAction/>
                 <Footer/>
+                </Slide>
 
         </div>
     )

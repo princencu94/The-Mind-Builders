@@ -23,6 +23,7 @@ import OurCapabilitiesPage from './pages/about/ourcapabilities.page';
 import DigitalMarketer from './pages/careers/digital.marketer.page';
 import EmailMarketer from './pages/careers/email.marketer.page';
 import OutsideSales from './pages/careers/outside.sales.page';
+import VirtualAssistantPage from './pages/services/virtual-assistant.page';
 import Closer from './pages/careers/closer.page';
 
 import AppointmentSetter from './pages/careers/appointment.setter.page';
@@ -34,10 +35,12 @@ import {
 } from "react-router-dom";
 import LeadGenerator from './pages/careers/lead.generator.page';
 
+
+
 function App() {
   return (
     <div className="App">
-
+      
       <Routes>
         
         <Route path="/" element={<Navbar />}>
@@ -62,6 +65,7 @@ function App() {
         <Route  path="/request-new-talent"  element={<RequestNewTalentPage/>} />
         <Route  path="/submit-your-resume"  element={<SubmitResumePage/>} />
         <Route  path="/our-capabilities"  element={<OurCapabilitiesPage/>} />
+        <Route  path="/virtual-assistant"  element={<VirtualAssistantPage/>} />
         <Route  path="/careers/digital-marketing"  element={<DigitalMarketer/>} />
         <Route  path="/careers/email-marketing"  element={<EmailMarketer/>} />
         <Route  path="/careers/outside-sales"  element={<OutsideSales/>} />

@@ -1,8 +1,10 @@
 import Footer from "../../components/footer/footer.component";
+import Slide from 'react-reveal/Slide';
 
 const LeadGenerator = () => {
     return (
         <div>
+            <Slide bottom>
             <div className="relative overflow-hidden bg-white py-16">
                 <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
                     <div className="relative mx-auto h-full max-w-prose text-lg" aria-hidden="true">
@@ -123,6 +125,7 @@ const LeadGenerator = () => {
                 </div>
             </div>
             <Footer/>
+            </Slide>
         </div>
         
     )

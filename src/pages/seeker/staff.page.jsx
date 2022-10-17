@@ -1,7 +1,9 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
-import { Link } from 'react-router-dom';
+import Slide from 'react-reveal/Slide';
+import StaffImage from '../../assets/staff.jpg';
+
 const StaffTypesPage = () => {
     return (
         <div>
@@ -9,12 +11,15 @@ const StaffTypesPage = () => {
 
             <div className="py-16 bg-white overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+                    <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
                         Intercom is much more than a temporary staffing agency because the needs of our clients stretch far beyond the "temporary"!
                     </p>
                     </div>
+                    </Slide>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+                    <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                             <h3>Temporary Staffing</h3>
@@ -36,6 +41,8 @@ const StaffTypesPage = () => {
                         </div>
                         
                     </div>
+                    </Slide>
+                    <Slide right>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg
                         className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
@@ -62,18 +69,21 @@ const StaffTypesPage = () => {
                         <blockquote className="relative bg-white rounded-lg shadow-lg">
                         <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                                alt="Whitney leaning against a railing on a downtown street"
+                                src={StaffImage}
+                                alt="Black and white office"
                                 width={1184}
                                 height={500}
                             />
                         </blockquote>
                     </div>
+                    </Slide>
                     </div>
                 </div>
             </div>
+            <Slide bottom>
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

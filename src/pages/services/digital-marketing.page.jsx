@@ -2,7 +2,8 @@ import HeaderBanner from "../../components/header-banners/header-banners.compone
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
 import { Link } from 'react-router-dom';
-import FinanceImage from '../../assets/finance.jpg';
+import DigitalImage from '../../assets/digital.jpg';
+import Slide from 'react-reveal/Slide';
 
 const TwoColumns = () => {
     return (
@@ -57,39 +58,28 @@ const TwoColumns = () => {
           <div className="relative md:bg-white md:p-6">
             <div className="lg:grid lg:grid-cols-2 lg:gap-6">
               <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
-                <h3>Accounts Payable Staffing</h3>
+                <h3>Email Marketing</h3>
 
-                <ul role="list">
-                    <li>Manage invoices – match, batch and code entries.</li>
-                    <li>Batch reconciliation.</li>
-                    <li>Manage, report and communicate status of payable accounts Resolve issues regarding vendor or customer payments.</li>
-                    <li>Update and reconcile and sub-ledger and general ledger.</li>
-                    <li>Manage chargebacks and other credit-related issues as needed.</li>
-                    <li>Work in coordination with other accounting department staff, including accounts receivable, tax accounting, credit and collections staff.</li>
-                </ul>
                 <p>
-                    Intercom will work with members of your management team to develop and support the staffing strategies that suit the ever-changing needs of your accounting and finance departments, Our goal is to continuously recruit employees to bolster our national database, ranging from clerks to CPAs, with a wide range of skills and levels of compensation.
+                  Spreading the word of what our company can do, the email marketers are the ones who are inviting the target audiences to the company, knocking on their inboxes, spreading awareness through email campaigns for them
                 </p>
                 <p>
-                    Here’s a partial list that offers a snapshot of additional accounting and finance positions that Intercom  offers for temp, direct-hire, temp-to-hire, independent contractor and third party payroll staffing solutions:
+                  As Intercom Staffing strives to become an internationally known brand that unites the best of the best staffing services to companies and start-up business owners in the world, being a lead generator would mean that the role is fit for someone whose endeavors are aligned with attracting clients and converting them into customers. 
                 </p>
-                <ol role="list">
-                    <li>Financial Analyst</li>
-                    <li>Business Analyst</li>
-                    <li>Billing Analyst</li>
-                    <li>Book Keeper</li>
-                    <li>Senior Accountant, Financial Reporting</li>
-                    <li>ERP Analyst</li>
-                    <li>Clerk</li>
-                    <li>Financial Customer Service Rep</li>
-                    <li>Commercial Banker</li>
-                </ol>
+              
                 <p>
-                    If you are in need of an experienced accounting or finance professional, let’s talk.
+                  In a world filled with uncertainty, we strive to use data, experiences, forecasts, and gurus to ensure the successful implementation of any growth strategy we pursue. We strive to continually earn our reputation as a company known for high quality staffing and digital marketing results, earning our reputation as a flexible employment company known for our competence, integrity, innovation, and execution.
+                </p>
+
+                <p>
+                  We embrace the competitive nature of business and seek to provide a significant advantage to every company, and each individual, with whom we interface.
+                </p>
+                <p>
+                  As part of a well-established team, we are providing an opportunity to individuals who are adept at building email lists, creating and optimizing emails for conversion and sales, and keeping leads warm through email marketing.
                 </p>
               </div>
               <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
-                <h3>Bookkeeper</h3>
+                {/* <h3>Bookkeeper</h3>
                 <p>
                     Overseeing accounts payable and accounts receivable functions. May include supervising accounts payable, accounts receivable and accounting clerk staff.
                 </p>
@@ -101,7 +91,7 @@ const TwoColumns = () => {
                     <li>Senior Accountant, Financial Reporting</li>
                     <li>Preparing depreciation schedules</li>
                     <li>Preparing the trial balance</li>
-                </ol>
+                </ol> */}
               </div>
             </div>
           </div>
@@ -118,23 +108,28 @@ const DigitalMarketingPage = () => {
 
             <div className="py-16 bg-gray-50 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+                    <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
-                        Most businesses experience seasonal and growth-related events that impact workloads for bookkeeping, credit, collecting and tax accounting staff.
+                      In the business industry, most target audiences needed a way or a guide to look for the right business for them. In order for the target audience to locate Intercom Staffing, a competent digital marketer is the right position to make it all work.
                     </p>
                     </div>
+                    </Slide>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+                    <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                         <p>
-                            Intercom offers cost-effective flexible staffing options to ensure that your finance and accounting responsibilities are met without waste or undue stress.
+                          In a world filled with uncertainty, we strive to use data, experiences, forecasts, and gurus to ensure the successful implementation of any growth strategy we pursue. We strive to continually earn our reputation as a company known for high quality staffing and digital marketing results, earning our reputation as a flexible employment company known for our competence, integrity, innovation, and execution.
                         </p>
                         <p>
-                            You can depend on Intercom for finance and accounting pros who are QuickBooks Certified and knowledgeable about the guidelines and standards that govern your workflows, including compliance with GAAP standards, state and federal regulations and laws, DSO guidelines and any governing bodies that pertain to your customers, clients or industry. Whether you need temp accounting support for month-end closing, quarterly filing, debt collections, or anything else that impacts your business objectives, Intercom has a timely staffing solution for you, within budget.
+                          As our name suggests, the goal of Intercom is to unite the very best clients with strategically placed employees for successful and measurable growth.
                         </p>
-                        <h3>Finance and accounting temp staff, direct hire and contractors.</h3>
                         <p>
-                            Administrative assistants provide clerical support for any number of office staff, often including an office manager. A qualified administrative assistant is prepared to support the needs of multiple supervisors and act as receptionist as needed. Administrative assistants must possess strong organizational skills, particularly with regard to standard computer applications and filing. Intercom administrative assistants are also expected to provide support with research and project coordination, including the interpersonal skills required to clearly communicate with management, clients, customers and vendors alike.
+                          We embrace the competitive nature of business and seek to provide a significant advantage to every company, and each individual, with whom we interface.
+                        </p>
+                        <p>
+                        As part of a well-established team, we are providing an opportunity to individuals who are adept at maintaining and analyzing digital channels in order to generate leads and build brand awareness for Intercom Staffing.
                         </p>
                         </div>
                         <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
@@ -148,6 +143,8 @@ const DigitalMarketingPage = () => {
                         </div>
                         </div>
                     </div>
+                    </Slide>
+                    <Slide right>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg
                         className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
@@ -174,19 +171,22 @@ const DigitalMarketingPage = () => {
                         <blockquote className="relative bg-white rounded-lg shadow-lg">
                         <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src={FinanceImage}
-                                alt="Cellphone showing stock numbers"
+                                src={DigitalImage}
+                                alt="Computer showing digital Marketing"
                                 width={1184}
                                 height={500}
                             />
                         </blockquote>
                     </div>
+                    </Slide>
                     </div>
                 </div>
             </div>
+            <Slide bottom>
             <TwoColumns/>
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

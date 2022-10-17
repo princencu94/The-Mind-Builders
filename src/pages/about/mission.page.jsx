@@ -1,6 +1,8 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
+import Slide from 'react-reveal/Slide';
+import MissionImage from '../../assets/mission.jpg';
 
 const MissionPage = () => {
     return (
@@ -12,6 +14,8 @@ const MissionPage = () => {
                     <div className="hidden lg:block bg-gray-50 absolute top-0 bottom-0 left-3/4 w-screen" />
                     <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
                     <div className="relative lg:row-start-1 lg:col-start-2">
+                        <Slide right>
+
                         <svg
                         className="hidden lg:block absolute top-0 right-0 -mt-20 -mr-20"
                         width={404}
@@ -39,16 +43,19 @@ const MissionPage = () => {
                             <div className="aspect-w-12 aspect-h-7 lg:aspect-none">
                             <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                                alt="Whitney leaning against a railing on a downtown street"
+                                src={MissionImage}
+                                alt="Balancing beams"
                                 width={1184}
                                 height={1376}
                             />
                             </div>
                         </figure>
                         </div>
+                        </Slide>
+
                     </div>
                     <div className="mt-8 lg:mt-0">
+                    <Slide bottom>
                         <div className="text-base max-w-prose mx-auto lg:max-w-none">
                         <p className="text-2xl text-black">
                         At Intercom, our mission is to fuel the success of our clients and provide employees with rewarding opportunities for career growth.
@@ -72,11 +79,14 @@ const MissionPage = () => {
                             Our company culture is founded upon the immense respect we hold for you and your company culture.
                         </p>
                         </div>
+                        </Slide>
                     </div>
                     </div>
                 </div>
                 </div>
-                <CallToAction/>
+                <Slide bottom>
+                    <CallToAction/>
+                </Slide>
                 <Footer/>
             </div>
 

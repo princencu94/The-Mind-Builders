@@ -1,8 +1,8 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
-import { Link } from 'react-router-dom';
 import hrmage from '../../assets/hr-resources.jpg';
+import Slide from 'react-reveal/Slide';
 
 const TwoColumns = () => {
     return (
@@ -99,12 +99,15 @@ const HumanResourcesPage = () => {
 
             <div className="py-16 bg-gray-50 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+                    <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
                         Many companies appropriately consider the HR department to be the heart, soul or nerve center of their business.
                     </p>
                     </div>
+                    </Slide>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+                    <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                         <p>
@@ -129,6 +132,8 @@ const HumanResourcesPage = () => {
                         </div>
                         
                     </div>
+                    </Slide>
+                    <Slide right>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg
                         className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
@@ -162,12 +167,15 @@ const HumanResourcesPage = () => {
                             />
                         </blockquote>
                     </div>
+                    </Slide>
                     </div>
                 </div>
             </div>
+            <Slide bottom>
             <TwoColumns/>
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
-import { Link } from 'react-router-dom';
-
+import Slide from 'react-reveal/Slide';
+import ContractorImage from '../../assets/contractor.jpg';
 const TwoColumns = () => {
     return (
         <div className="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
@@ -182,12 +182,15 @@ const ContractorPage = () => {
 
             <div className="py-16 bg-gray-50 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+                    <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
                     As a flexible staffing company dedicated to providing efficient workforce solutions, Intercom is a trusted resource for issues surrounding 1099 independent contractor compliance.
                     </p>
                     </div>
+                    </Slide>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+                    <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                         <p>
@@ -201,9 +204,11 @@ const ContractorPage = () => {
                             W2 vs. 1099 refers to the difference in tax forms, with employees being W-2 form recipients and independent contractors each receiving a 1099. According to taxing authorities, whether or not the working relationship is consistent with how each type of worker is defined dictates compliance. W-2 employees have payroll taxes deducted by their employer, who pays the government on the employee’s behalf. Contractors are responsible for their own payroll taxes and expected to submit their own payments to the government.
                         </p>
                         </div>
-
+                    
                     </div>
+                    </Slide>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
+                        <Slide right>
                         <svg
                         className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
                         width={404}
@@ -229,20 +234,23 @@ const ContractorPage = () => {
                         <blockquote className="relative bg-white rounded-lg shadow-lg">
                         <img
                                 className="rounded-lg shadow-lg object-cover object-center"
-                                src="https://images.unsplash.com/photo-1546913199-55e06682967e?ixlib=rb-1.2.1&auto=format&fit=crop&crop=focalpoint&fp-x=.735&fp-y=.55&w=1184&h=1376&q=80"
-                                alt="Whitney leaning against a railing on a downtown street"
+                                src={ContractorImage}
+                                alt="A woman standing wearing a work reflector"
                                 width={1184}
                                 height={500}
                             />
                         </blockquote>
+                        </Slide>
                     </div>
                     </div>
                 </div>
             </div>
+            <Slide bottom>
             <TwoColumns/>
             <TwoColumns2/>
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

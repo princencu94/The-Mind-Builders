@@ -1,8 +1,8 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
-import { Link } from 'react-router-dom';
 import itImage from '../../assets/it.jpg';
+import Slide from 'react-reveal/Slide';
 
 const TwoColumns = () => {
     return (
@@ -65,20 +65,20 @@ const TwoColumns = () => {
                     <div className="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
                         <h3>Help Desk Analyst</h3>
                         <p>
-                        Managing the needs of internal and remote users who access software that supports the company’s business needs, whether proprietary in nature or based within the Windows, Google or Apple cloud-based systems.
-Supporting web and intranet applications rendering on a variety of platforms, including mobile. Organizing the use of a help ticket system to manage troubleshooting and escalation of user issues.
+                            Managing the needs of internal and remote users who access software that supports the company’s business needs, whether proprietary in nature or based within the Windows, Google or Apple cloud-based systems.
+                            Supporting web and intranet applications rendering on a variety of platforms, including mobile. Organizing the use of a help ticket system to manage troubleshooting and escalation of user issues.
                         </p>
                         <p>
-                        Supporting company-owned and user-owned hardware that may include cloud any variety of tables, mobile phones, laptops and desktop computers.
-Supporting, managing and training help desk technicians as required. Support various company printers. Depending on level of position, will have a varying degree of responsibility to work with cyber security engineers and comply with processes that support system security architecture.
+                            Supporting company-owned and user-owned hardware that may include cloud any variety of tables, mobile phones, laptops and desktop computers.
+                            Supporting, managing and training help desk technicians as required. Support various company printers. Depending on level of position, will have a varying degree of responsibility to work with cyber security engineers and comply with processes that support system security architecture.
                         </p> 
                     </div>
                     <div className="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">
                         <h3>Help Desk Technician.</h3>
                         <p>
-                        Skillset requirements include problem-solving, good communication skills, patience, teamwork and follow-up.
-Strong tech skills that include familiarity with a variety of hardware, software, networking cloud-based applications and basic office-support applications, such as those belonging to the Microsoft Office suite.
-Depending on size and structure of company, various levels of help desk technician positions will determine the required skill set, education and certifications for staff positions at each level.
+                            Skillset requirements include problem-solving, good communication skills, patience, teamwork and follow-up.
+                            Strong tech skills that include familiarity with a variety of hardware, software, networking cloud-based applications and basic office-support applications, such as those belonging to the Microsoft Office suite.
+                            Depending on size and structure of company, various levels of help desk technician positions will determine the required skill set, education and certifications for staff positions at each level.
                         </p>
                     </div>
                     </div>
@@ -97,12 +97,15 @@ const InformationTechnologyPage = () => {
 
             <div className="py-16 bg-gray-50 overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 space-y-8 sm:px-6 lg:px-8">
+                    <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
                         As the IT staffing needs of our clients continue to evolve, Intercom is committed to broadening the base of our rockstar tech talent pool.
                     </p>
                     </div>
+                    </Slide>
                     <div className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+                    <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                         <p>
@@ -110,8 +113,8 @@ const InformationTechnologyPage = () => {
                         </p>
                         <h3>If you are a techie who’s looking to support the success of Intercom clients, let’s connect. </h3>
                         <p>
-                        In the 21st century, if you’re breathing, you’re concerned about internet security.
-Over the past few years, nothing has been a higher priority to Unforce than IT security staffing for our valued clients. From IT security architects and analysts to IT security engineers, we have staffing solutions to support the cyber security initiatives of your company. Cyber security is evolving quickly. The following roles and responsibilities are a partial representation of the many that exist currently:
+                            In the 21st century, if you’re breathing, you’re concerned about internet security.
+                            Over the past few years, nothing has been a higher priority to Unforce than IT security staffing for our valued clients. From IT security architects and analysts to IT security engineers, we have staffing solutions to support the cyber security initiatives of your company. Cyber security is evolving quickly. The following roles and responsibilities are a partial representation of the many that exist currently:
                         </p>
                         <h3>Information Technology Security Professionals</h3>
                         <p>
@@ -129,6 +132,8 @@ Over the past few years, nothing has been a higher priority to Unforce than IT s
                         </div>
                         
                     </div>
+                    </Slide>
+                    <Slide right>
                     <div className="mt-12 relative text-base max-w-prose mx-auto lg:mt-0 lg:max-w-none">
                         <svg
                         className="absolute top-0 right-0 -mt-20 -mr-20 lg:top-auto lg:right-auto lg:bottom-1/2 lg:left-1/2 lg:mt-0 lg:mr-0 xl:top-0 xl:right-0 xl:-mt-20 xl:-mr-20"
@@ -162,12 +167,16 @@ Over the past few years, nothing has been a higher priority to Unforce than IT s
                             />
                         </blockquote>
                     </div>
+                    </Slide>
                     </div>
+                    
                 </div>
             </div>
+            <Slide bottom>
             <TwoColumns/>
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

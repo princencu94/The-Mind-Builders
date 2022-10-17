@@ -4,6 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
+import Slide from 'react-reveal/Slide';
 
 const faqs = [
     {
@@ -43,6 +44,7 @@ const Faqs = () => {
     return (
         <div>
             <HeaderBanner heading="Frequently Asked Questions" />
+            <Slide bottom>
             <div className="bg-white">
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto divide-y-2 divide-gray-200">
@@ -76,6 +78,7 @@ const Faqs = () => {
             
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
     )
 }

@@ -1,18 +1,10 @@
-import { Fragment } from 'react'
-import { Link } from 'react-router-dom';
 import HeroImage from '../../assets/Intercom.jpeg';
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from '../../assets/logo-4.png';
+import { Popover } from '@headlessui/react';
+import { Link } from 'react-router-dom';
 
-const navigation = [
+import Fade from 'react-reveal/Fade';
 
 
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-]
 
 const HeroSection = () => {
   
@@ -49,6 +41,7 @@ const HeroSection = () => {
 
           <main className="mx-auto m-0 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-5 lg:px-8 xl:mt-2">
             <div className="sm:text-center lg:text-left transition ease-in-out delay-200">
+            <Fade top big>
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Intercom Staffing</span>{' '}
                 <span className="block text-yellow-300 xl:inline">Agency</span>
@@ -58,32 +51,35 @@ const HeroSection = () => {
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-full shadow">
-                  <a
-                    href="#"
+                  <Link
+                    to="/contact-us"
                     className="flex w-full items-center justify-center rounded-full border border-transparent bg-yellow-300 px-8 py-3 text-base font-medium text-black hover:bg-yellow-200 md:py-4 md:px-10 md:text-lg"
                   >
-                    Lets Talk
-                  </a>
+                    Lets Talk!
+                  </Link>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
-                    href="#"
+                    href="#services"
                     className="flex w-full items-center justify-center rounded-full border border-transparent bg-yellow-100 px-8 py-3 text-base font-medium text-black hover:bg-yellow-300 md:py-4 md:px-10 md:text-lg"
                   >
-                    How we can Help
+                    How we can Help?
                   </a>
                 </div>
               </div>
+              </Fade>
             </div>
           </main>
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-          src={HeroImage}
-          alt="A Woman in Business"
-        />
+        <Fade right big>
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
+            src={HeroImage}
+            alt="A Woman in Business"
+          />
+        </Fade>
       </div>
     </div>
       </>

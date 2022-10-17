@@ -57,8 +57,8 @@ const staffing = [
     icon: ArrowDownRightIcon,
   },
   {
-    name: 'Finance Accounting',
-    href: 'finance-accounting',
+    name: 'Digital Marketing',
+    href: 'digital-marketing',
     icon: ArrowDownRightIcon,
   },
   {
@@ -71,14 +71,20 @@ const staffing = [
     href: 'behavioral-healthcare',
     icon: ArrowDownRightIcon,
   },
-  {
-    name: 'Healthcare Support',
-    href: 'healthcare-support',
-    icon: ArrowDownRightIcon,
-  },
+ 
   {
     name: 'IT & Implementation',
     href: 'information-technology',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'Sales Rockstars',
+    href: 'sales-rockstars',
+    icon: ArrowDownRightIcon,
+  },
+  {
+    name: 'Virtual Assistant',
+    href: 'virtual-assistant',
     icon: ArrowDownRightIcon,
   },
 ]

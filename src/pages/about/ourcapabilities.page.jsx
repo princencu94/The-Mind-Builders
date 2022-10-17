@@ -1,7 +1,8 @@
 import HeaderBanner from "../../components/header-banners/header-banners.component";
 import Footer from "../../components/footer/footer.component";
 import CallToAction from "../../components/call-to-action/call-to-action.component";
-import { CheckIcon } from '@heroicons/react/24/outline'
+import { CheckIcon } from '@heroicons/react/24/outline';
+import Slide from 'react-reveal/Slide';
 
 const features = [
 
@@ -23,6 +24,7 @@ const OurCapabilitiesPage = () => {
     return (
         <div>
             <HeaderBanner heading="Our Capabilities"/>
+            <Slide bottom>
             <section>
                 <div className="bg-white">
                     <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
@@ -52,6 +54,7 @@ const OurCapabilitiesPage = () => {
 
             <CallToAction/>
             <Footer/>
+            </Slide>
         </div>
 
           
