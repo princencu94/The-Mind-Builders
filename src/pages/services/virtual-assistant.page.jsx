@@ -98,11 +98,11 @@ export default function VirtualAssistantPage() {
                 <Slide bottom>
                 <div className="pt-12 sm:pt-16 lg:pt-20">
                     <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                        Get a quality Real Estate VA for only $8/hr!
+                        We are looking for quality Real Estate VA's starting at $8/hr!
                     </h2>
                     <div className="mt-6 space-y-6 text-gray-500">
                     <p className="text-lg">
-                        Attract more property sales and clients with our skilled, college-educated assistants. Sign up now and we’ll match you with the right assistant within 72 hours. 
+                        Do you think you have what it takes to work as a Real Estate VA, for some top quality clients? if Yes! don't hasitate to punch in your information or send us your Resume. 
                     </p>
                     </div>
                 </div>

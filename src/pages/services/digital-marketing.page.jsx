@@ -135,10 +135,10 @@ const DigitalMarketingPage = () => {
                         <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
                         <div className="rounded-full shadow">
                             <Link
-                            to="/contact-us"
-                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-white bg-yellow-300 hover:bg-yellow-200"
+                            to="/careers"
+                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-200"
                             >
-                                Contact Us
+                                Marketing VA Opportunities
                             </Link>
                         </div>
                         </div>

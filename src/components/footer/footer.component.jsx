@@ -4,12 +4,38 @@ import FooterBG from '../../assets/footer-bg.jpg';
 
 const navigation = {
     staffing: [
-      { name: 'Administrative Support', href:'administrative-support' },
-      { name: 'Finance Accounting', href:'finance-accounting' },
-      { name: 'Human Resources', href:'human-resources' },
-      { name: 'Behavioral Healthcare', href:'behavioral-healthcare' },
-      { name: 'Healthcare Support', href:'healthcare-support' },
-      { name: 'IT & Implementation', href:'information-technology' },
+      {
+        name: 'Administrative Support',
+        href: 'administrative-support',
+       
+      },
+      {
+        name: 'Digital Marketing',
+        href: 'digital-marketing',
+       
+      },
+      {
+        name: 'Human Resources',
+        href: 'human-resources',
+      
+      },
+      {
+        name: 'Behavioral Healthcare',
+        href: 'behavioral-healthcare',
+     
+      },
+     
+      {
+        name: 'IT & Implementation',
+        href: 'information-technology',
+     
+      },
+      {
+        name: 'Sales Rockstars',
+        href: 'sales-rockstars',
+     
+      },
+
     ],
     job: [
       { name: 'Types of Staffing', href: 'types-of-staffing' },
@@ -158,7 +184,7 @@ const Footer = () => {
       </div>
      
     </footer>  
-    <div className="mt-0 bg-yellow-300 border-t border-white pt-8 md:flex md:items-center md:justify-between sm:px-6 lg:py-5 lg:px-8">
+        <div className="mt-0 bg-yellow-300 border-t px-4 border-white pt-8 md:flex md:items-center md:justify-between sm:px-6 lg:py-5 lg:px-8">
           <div className="flex space-x-6 md:order-2">
             {navigation.social.map((item) => (
               <a key={item.name} href={item.href} target="_blank" className="text-black hover:text-gray-500">
@@ -167,7 +193,7 @@ const Footer = () => {
               </a>
             ))}
           </div>
-          <p className="mt-8 text-base text-black md:mt-0 md:order-1">
+          <p className="mt-8 pb-4 text-base text-black md:mt-0 md:order-1">
             &copy; 2022 Intercom Staffing, Inc. All rights reserved.
           </p>
         </div>    

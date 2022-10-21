@@ -43,6 +43,12 @@ const aboutIntercom = [
   //   href: 'our-team',
   //   icon: ArrowDownRightIcon,
   // },
+
+  {
+    name: 'Articles',
+    href: 'articles',
+    icon: ArrowDownRightIcon,
+  },
   {
     name: 'Contact Us',
     href: 'contact-us',
@@ -82,11 +88,7 @@ const staffing = [
     href: 'sales-rockstars',
     icon: ArrowDownRightIcon,
   },
-  {
-    name: 'Virtual Assistant',
-    href: 'virtual-assistant',
-    icon: ArrowDownRightIcon,
-  },
+
 ]
 
 

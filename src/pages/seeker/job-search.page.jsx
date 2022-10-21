@@ -1,6 +1,8 @@
 import Footer from "../../components/footer/footer.component";
 import Slide from 'react-reveal/Slide';
 
+import CareersList from "../../components/careers/careers.component";
+
 const marketings = [
 
 
@@ -48,47 +50,7 @@ const JobSearchPage = () => {
     return (
         <div>
             <Slide bottom>
-            <div className="bg-white px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-                <div className="relative mx-auto max-w-lg divide-y-2 divide-gray-200 lg:max-w-7xl">
-                    <div>
-                    <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Careers</h2>
-                    </div>
-                    <div className="mt-6 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-                    {marketings.map((marketing) => (
-                        <div key={marketing.title}>
-                        
-                        <a href="#" className="mt-2 block">
-                            <p className="text-xl font-semibold text-gray-900">{marketing.title}</p>
-                            <p className="mt-3 text-base text-gray-500">{marketing.description}</p>
-                        </a>
-                        <div className="mt-3">
-                            <a href={marketing.href} className="text-base font-semibold text-yellow-300 hover:text-yellow-200">
-                                Read more
-                            </a>
-                        </div>
-                        </div>
-                    ))}
-                    </div>
-
-                    <div className="mt-16 grid gap-16 pt-10 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
-                    {sales.map((sale) => (
-                        <div key={sale.title}>
-                        
-                        <a href="#" className="mt-2 block">
-                            <p className="text-xl font-semibold text-gray-900">{sale.title}</p>
-                            <p className="mt-3 text-base text-gray-500">{sale.description}</p>
-                        </a>
-                        <div className="mt-3">
-                            <a href={sale.href} className="text-base font-semibold text-yellow-300 hover:text-yellow-200">
-                                Read more
-                            </a>
-                        </div>
-                        </div>
-                    ))}
-                    </div>
-                </div>
-            </div>
-
+            <CareersList/>
             <Footer/>
             </Slide>
         </div>

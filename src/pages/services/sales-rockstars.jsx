@@ -4,6 +4,7 @@ import CallToAction from "../../components/call-to-action/call-to-action.compone
 import Footer from "../../components/footer/footer.component";
 import Slide from 'react-reveal/Slide';
 import SalesImage from '../../assets/sales.jpg';
+import { Link } from 'react-router-dom';
 
 const TwoColumns = () => {
     return (
@@ -232,6 +233,16 @@ const SalesRockstarsPage = () => {
                         <p>
                         As part of a well-established team, we are providing an opportunity to individuals who are willing to go out in the field to make sales to the target audience face to face.
                         </p>
+                        </div>
+                        <div className="mt-10 flex text-base max-w-prose mx-auto lg:max-w-none">
+                        <div className="rounded-full shadow">
+                            <Link
+                            to="/careers"
+                            className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-200"
+                            >
+                                Sales VA Opportunities
+                            </Link>
+                        </div>
                         </div>
                         
                     </div>

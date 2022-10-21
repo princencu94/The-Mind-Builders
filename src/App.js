@@ -1,4 +1,5 @@
 import './App.css';
+// Pages
 import Homepage from './pages/homepage';
 import MissionPage from './pages/about/mission.page';
 import Compliance from './pages/about/compliance.page';
@@ -20,13 +21,20 @@ import EmployeeRecognitionProgramPage from './pages/seeker/employee-recognition.
 import SubmitResumePage from './pages/seeker/submit-resume.page';
 import RequestNewTalentPage from './pages/seeker/request-new-talent.page';
 import OurCapabilitiesPage from './pages/about/ourcapabilities.page';
+import ArticlesPage from './pages/articles.page';
+
+//Careers
 import DigitalMarketer from './pages/careers/digital.marketer.page';
 import EmailMarketer from './pages/careers/email.marketer.page';
 import OutsideSales from './pages/careers/outside.sales.page';
 import VirtualAssistantPage from './pages/services/virtual-assistant.page';
 import Closer from './pages/careers/closer.page';
-
 import AppointmentSetter from './pages/careers/appointment.setter.page';
+
+// Articles
+import EnforcingTruthsArticle from './pages/articles/enforcing-truths.article';
+
+
 import Navbar from './components/navbar/navbar.component';
 
 import {
@@ -61,17 +69,20 @@ function App() {
         <Route  path="/1099-independent-contractor-compliance"  element={<ContractorPage/>} />
         <Route  path="/types-of-staffing"  element={<StaffTypesPage/>} />
         <Route  path="/careers"  element={<JobSearchPage/>} />
+        <Route  path="/articles"  element={<ArticlesPage/>} />
         <Route  path="/employee-recognization-program"  element={<EmployeeRecognitionProgramPage/>} />
         <Route  path="/request-new-talent"  element={<RequestNewTalentPage/>} />
         <Route  path="/submit-your-resume"  element={<SubmitResumePage/>} />
         <Route  path="/our-capabilities"  element={<OurCapabilitiesPage/>} />
-        <Route  path="/virtual-assistant"  element={<VirtualAssistantPage/>} />
+        <Route  path="/careers/virtual-assistant"  element={<VirtualAssistantPage/>} />
         <Route  path="/careers/digital-marketing"  element={<DigitalMarketer/>} />
         <Route  path="/careers/email-marketing"  element={<EmailMarketer/>} />
         <Route  path="/careers/outside-sales"  element={<OutsideSales/>} />
         <Route  path="/careers/closer"  element={<Closer/>} />
         <Route  path="/careers/lead-generator"  element={<LeadGenerator/>} />
         <Route  path="/careers/appointment-setter"  element={<AppointmentSetter/>} />
+
+        <Route  path="/articles/enforcing-truths-you-want-interviewers-see"  element={<EnforcingTruthsArticle/>} />
         </Route>
       </Routes>
   

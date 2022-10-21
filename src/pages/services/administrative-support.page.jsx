@@ -3,7 +3,7 @@ import HeaderBanner from "../../components/header-banners/header-banners.compone
 import CallToAction from "../../components/call-to-action/call-to-action.component";
 import Footer from "../../components/footer/footer.component";
 import AdminImage from '../../assets/Admin.jpg';
-import BGIMAGE from '../../assets/bg-page.jpg';
+
 import Slide from 'react-reveal/Slide';
 
 const TwoColumns = () => {
