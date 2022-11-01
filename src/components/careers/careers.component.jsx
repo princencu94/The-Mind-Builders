@@ -1,5 +1,7 @@
-import { CalendarIcon } from '@heroicons/react/20/solid';
+import { useState } from 'react'
+import { CalendarIcon, ArrowUpTrayIcon } from '@heroicons/react/20/solid';
 import { Link } from 'react-router-dom';
+import CareerResumeModal from '../career-resume/career-resume.component';
 
 const positions = [
 
@@ -23,7 +25,7 @@ const positions = [
   {
     id: 3,
     title: 'Outside Sales',
-    type: 'Virtual Assistant',
+    type: 'Remote, Nationwide, USA',
     postedDate: '2022-10-10',
     postedDateFull: 'October 10, 2022',
     href:"outside-sales",
@@ -47,7 +49,7 @@ const positions = [
   {
     id: 6,
     title: 'Closer',
-    type: 'Virtual Assistant',
+    type: 'Remote, Nationwide, USA',
     postedDate: '2022-10-10',
     postedDateFull: 'October 10, 2022',
     href:"closer ",
@@ -63,6 +65,13 @@ const positions = [
 ]
 
 const CareersList = () => {
+
+  const [showForm, setShowForm] = useState(false);
+
+  const handleOpenCloseModal = () => {
+      setShowForm(true)
+  }
+
     return (
         <div className="bg-white">
             <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
@@ -79,8 +88,9 @@ const CareersList = () => {
                         <ul role="list" className="divide-y divide-gray-200">
                             {positions.map((position) => (
                             <li key={position.id}>
-                                <Link to={position.href} className="block hover:bg-yellow-50">
-                                <div className="px-4 py-4 sm:px-6">
+                                
+                                <div className="px-4 py-4 sm:px-6 ">
+                                  <Link to={position.href} className="block ">
                                     <div className="flex items-center justify-between">
                                     <p className="truncate text-sm font-medium text-black">{position.title}</p>
                                     <div className="ml-2 flex flex-shrink-0">
@@ -89,7 +99,15 @@ const CareersList = () => {
                                         </p>
                                     </div>
                                     </div>
+                                  </Link>
+                                   
                                     <div className="mt-2 sm:flex sm:justify-between">
+                                    <div className="sm:flex">
+                                      <button onClick={handleOpenCloseModal} className="flex items-center text-sm text-gray-500">
+                                        <ArrowUpTrayIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
+                                        Upload Resume
+                                      </button>
+                                    </div>
                                     
                                     <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
                                         <CalendarIcon className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400" aria-hidden="true" />
@@ -99,14 +117,17 @@ const CareersList = () => {
                                     </div>
                                     </div>
                                 </div>
-                                </Link>
+                                
                             </li>
                             ))}
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
+        
+           <CareerResumeModal showForm={showForm} setShowForm={setShowForm}/>     
+          </div>
+        
     )
 }
 

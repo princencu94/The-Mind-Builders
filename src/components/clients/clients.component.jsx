@@ -14,7 +14,7 @@ const Clients = () => {
         <div className="lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
           <div>
             <Fade left>
-              <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              <h2 className="text-3xl font-bold tracking-tight text-gray-black sm:text-4xl">
                 Intercom Staffing <br/> Companies
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">

@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0209a25.chunk.css",
-    "main.js": "/static/js/main.efed3074.chunk.js",
-    "main.js.map": "/static/js/main.efed3074.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.afc2f46c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.afc2f46c.js.map",
-    "static/js/2.37dfb84e.chunk.js": "/static/js/2.37dfb84e.chunk.js",
-    "static/js/2.37dfb84e.chunk.js.map": "/static/js/2.37dfb84e.chunk.js.map",
-    "static/js/3.4b557d0a.chunk.js": "/static/js/3.4b557d0a.chunk.js",
-    "static/js/3.4b557d0a.chunk.js.map": "/static/js/3.4b557d0a.chunk.js.map",
+    "main.css": "/static/css/main.6dda3e86.chunk.css",
+    "main.js": "/static/js/main.47913831.chunk.js",
+    "main.js.map": "/static/js/main.47913831.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e752daee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e752daee.js.map",
+    "static/js/2.1bb02359.chunk.js": "/static/js/2.1bb02359.chunk.js",
+    "static/js/2.1bb02359.chunk.js.map": "/static/js/2.1bb02359.chunk.js.map",
+    "static/js/3.caf78583.chunk.js": "/static/js/3.caf78583.chunk.js",
+    "static/js/3.caf78583.chunk.js.map": "/static/js/3.caf78583.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b0209a25.chunk.css.map": "/static/css/main.b0209a25.chunk.css.map",
-    "static/js/2.37dfb84e.chunk.js.LICENSE.txt": "/static/js/2.37dfb84e.chunk.js.LICENSE.txt",
+    "static/css/main.6dda3e86.chunk.css.map": "/static/css/main.6dda3e86.chunk.css.map",
+    "static/js/2.1bb02359.chunk.js.LICENSE.txt": "/static/js/2.1bb02359.chunk.js.LICENSE.txt",
     "static/media/Admin.d074d03e.jpg": "/static/media/Admin.d074d03e.jpg",
     "static/media/Intercom.fad72295.jpeg": "/static/media/Intercom.fad72295.jpeg",
     "static/media/banner.1201fcdb.png": "/static/media/banner.1201fcdb.png",
+    "static/media/careers-bg-2.4d5f5fbe.jpg": "/static/media/careers-bg-2.4d5f5fbe.jpg",
+    "static/media/careers-bg.8ccd732d.png": "/static/media/careers-bg.8ccd732d.png",
     "static/media/competitive.a2af1cde.jpg": "/static/media/competitive.a2af1cde.jpg",
     "static/media/compliance.e3bea1e1.jpg": "/static/media/compliance.e3bea1e1.jpg",
     "static/media/contact.bda76520.svg": "/static/media/contact.bda76520.svg",
@@ -32,6 +34,7 @@
     "static/media/logo-7.ba1928ef.svg": "/static/media/logo-7.ba1928ef.svg",
     "static/media/logo-8.c0af54e3.svg": "/static/media/logo-8.c0af54e3.svg",
     "static/media/mission.a71c2457.jpg": "/static/media/mission.a71c2457.jpg",
+    "static/media/our-mission-2.f13bb989.jpg": "/static/media/our-mission-2.f13bb989.jpg",
     "static/media/payroll.d009dc4c.jpg": "/static/media/payroll.d009dc4c.jpg",
     "static/media/sales.69edf33d.jpg": "/static/media/sales.69edf33d.jpg",
     "static/media/spinner.a31aaeea.svg": "/static/media/spinner.a31aaeea.svg",
@@ -39,9 +42,9 @@
     "static/media/virtual-assistant.2967e5e1.svg": "/static/media/virtual-assistant.2967e5e1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.afc2f46c.js",
-    "static/js/2.37dfb84e.chunk.js",
-    "static/css/main.b0209a25.chunk.css",
-    "static/js/main.efed3074.chunk.js"
+    "static/js/runtime-main.e752daee.js",
+    "static/js/2.1bb02359.chunk.js",
+    "static/css/main.6dda3e86.chunk.css",
+    "static/js/main.47913831.chunk.js"
   ]
 }

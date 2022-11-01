@@ -376,14 +376,14 @@ const RequestNewTalentForm = () => {
                     <div className="flex text-sm text-gray-600">
                       <label
                         htmlFor="file-upload"
-                        className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-yellow-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-yellow-300"
+                        className="relative cursor-pointer bg-white rounded-md font-medium text-black hover:text-yellow-300 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-yellow-300"
                       >
-                        <span>Upload a file</span>
+                        
                         <input 
                         id="file-upload" 
                         name="file" 
                         type="file" 
-                        className="sr-only" 
+                        
                         onChange={formik.handleChange}
                         onBlur={formik.handleBlur}
                         value={formik.values.file}
@@ -413,11 +413,13 @@ const RequestNewTalentForm = () => {
             >
               {
                 isSubmitting ?
-                <img src={Spinner} className="-ml-0.5 mr-2 h-4 w-4" alt="Spinner"/>
-                : null
+                  <>
+                    <img src={Spinner} className="-ml-0.5 mr-2 h-4 w-4" alt="Spinner"/> Submitting
+                  </>
+                  
+                : "Submit"
               }
-              
-              Submit
+            
             </button>
           </div>
         </div>

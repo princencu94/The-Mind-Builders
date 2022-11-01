@@ -131,11 +131,11 @@ const job = [
   //   href: 'blog',
   //   icon: ArrowDownRightIcon,
   // },
-  {
-    name: 'Request New Talent',
-    href: 'request-new-talent',
-    icon: ArrowDownRightIcon,
-  }
+  // {
+  //   name: 'Request New Talent',
+  //   href: 'request-new-talent',
+  //   icon: ArrowDownRightIcon,
+  // }
 ]
 
 const employer = [
@@ -164,11 +164,11 @@ const employer = [
   //   href: 'case-studies',
   //   icon: ArrowDownRightIcon,
   // },
-  {
-    name: 'Request New Talent',
-    href: 'request-new-talent',
-    icon: ArrowDownRightIcon,
-  }
+  // {
+  //   name: 'Request New Talent',
+  //   href: 'request-new-talent',
+  //   icon: ArrowDownRightIcon,
+  // }
 ]
 
 const companies = [
@@ -446,7 +446,7 @@ const Navbar = () => {
                 to="/request-new-talent"
                 className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-black bg-yellow-300 hover:secondary-color-bg-8"
               >
-                Submit Resume
+                Request new Talent
               </Link>
             </div>
           </div>
