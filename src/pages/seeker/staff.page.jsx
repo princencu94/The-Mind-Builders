@@ -22,15 +22,14 @@ const StaffTypesPage = () => {
                     <Slide bottom>
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
-                            <h3>Temporary Staffing</h3>
+                            <h3>Temporary Staffing & Direct Hire Staffing</h3>
                             <p>
                                 Intercom has a network of growth professionals and also sources and recruits the employees necessary for short and long-term project assignments with its clients. We maintain compliance as the W-2 legal employer of record and simply charge a flat hourly rate. We’re also a multi-state licensed employer. Temporary and long-term placement staffing is a useful tool to supplement your organization by supplying qualified professionals who can help your company grow and maintain growth, right now.
                             </p>
-                            <h3>Direct Hire Staffing</h3>
                             <p>
                                 As a part of its temporary staffing solution, Intercom supplies employees for short and long term project assignments with the option for the client to hire the employee on a full-time basis. This is a cost effective way to transition the employee from our payroll to your company’s payroll. Why not “try before you buy?”
                             </p>
-                            <h3>Digital Marketing EXPERT Solutions</h3>
+                            <h3>Digital Marketing Solution for Small Businesses</h3>
                             <p>
                                 Many companies need a Chief Marketing Officer in their organization but don’t have one, because their marketing needs do not necessitate a full-time expert. What Intercom can do for you is provide you with two options around this concern: 
                             </p>

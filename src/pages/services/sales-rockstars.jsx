@@ -210,7 +210,7 @@ const SalesRockstarsPage = () => {
                     <Slide bottom>
                     <div className="relative z-10 text-base max-w-prose mx-auto lg:max-w-5xl lg:mx-0 lg:pr-72">
                     <p className="text-2xl text-black-900">
-                        Outside Sales Representative
+                        Outside Sales Representatives, Closers, Lead Generators, Appointment Setters
                     </p>
                     </div>
                     </Slide>
@@ -219,7 +219,7 @@ const SalesRockstarsPage = () => {
                     <div className="relative z-10">
                         <div className="prose prose-indigo text-gray-500 mx-auto lg:max-w-none">
                         <p>
-                            You want to meet people personally and conduct sales to the customers or clients out in the field to test your interpersonal and marketing skills? Then being an outside sales representative is a job for you.
+                            Regardless of the job title, you need someone to help GROW your business, and this is where we come in. 
                         </p>
                         <p>
                             As Intercom Staffing strives to become an internationally known brand that unites the best of the best staffing services to companies and start-up business owners in the world, being a lead generator would mean that the role is fit for someone whose endeavors are aligned with attracting business owners and converting them into customers.
@@ -286,8 +286,6 @@ const SalesRockstarsPage = () => {
                 </div>
             </div>
             <Slide bottom>
-            <TwoColumns/>
-            <TwoColumns2/>
             <CallToAction/>
             <Footer/>
             </Slide>

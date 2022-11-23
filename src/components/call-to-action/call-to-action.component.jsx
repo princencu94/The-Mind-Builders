@@ -9,7 +9,7 @@ const CallToAction = () => {
                 <span className="block">for staffing compliance</span>
                 </h2>
                 <p className="mt-4 text-lg leading-6 text-gray-700">
-                If you’re a professional with educational experience and/or certifications that speak to your compliance adherence, and you’re seeking to work with a Intercom client, let’s connect.
+                If you’re a professional with educational experience and/or certifications that speak to your compliance adherence, and you’re seeking to work with an Intercom client, let’s connect.
                 </p>
                 <div className="mt-8 flex justify-center">
                     <div className="inline-flex rounded-full shadow">

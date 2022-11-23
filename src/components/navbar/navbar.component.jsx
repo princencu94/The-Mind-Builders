@@ -102,7 +102,13 @@ const growth = [
     name: '1099 Independent Contractor Compliance',
     href: '1099-independent-contractor-compliance',
     icon: ArrowDownRightIcon,
-  }
+  },
+  {
+    name: 'Employee Benefits',
+    href: 'employee-benefits',
+    icon: ArrowDownRightIcon,
+  },
+
 ]
 
 const job = [
@@ -212,8 +218,8 @@ function classNames(...classes) {
 
 const Navbar = () => {
     return (
-      <div className="relative bg-gray-50">
-      <Popover className="relative bg-white shadow">
+      <div className=" bg-gray-50 ">
+      <Popover className=" bg-white shadow sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">

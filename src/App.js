@@ -22,6 +22,7 @@ import SubmitResumePage from './pages/seeker/submit-resume.page';
 import RequestNewTalentPage from './pages/seeker/request-new-talent.page';
 import OurCapabilitiesPage from './pages/about/ourcapabilities.page';
 import ArticlesPage from './pages/articles.page';
+import EmployeeBenefitsPage from './pages/growth/employee-benefits.page';
 
 //Careers
 import DigitalMarketer from './pages/careers/digital.marketer.page';
@@ -66,6 +67,7 @@ function App() {
         <Route  path="/sales-rockstars"  element={<SalesRockstarsPage/>} />
         <Route  path="/information-technology"  element={<InformationTechnologyPage/>} />
         <Route  path="/third-party-payroll-solutions"  element={<PayrollPage/>} />
+        <Route  path="/employee-benefits"  element={<EmployeeBenefitsPage/>} />
         <Route  path="/1099-independent-contractor-compliance"  element={<ContractorPage/>} />
         <Route  path="/types-of-staffing"  element={<StaffTypesPage/>} />
         <Route  path="/careers"  element={<JobSearchPage/>} />

@@ -7,33 +7,27 @@ const navigation = {
       {
         name: 'Administrative Support',
         href: 'administrative-support',
-       
       },
       {
         name: 'Digital Marketing',
         href: 'digital-marketing',
-       
       },
       {
         name: 'Human Resources',
         href: 'human-resources',
-      
       },
       {
         name: 'Behavioral Healthcare',
         href: 'behavioral-healthcare',
-     
       },
      
       {
         name: 'IT & Implementation',
         href: 'information-technology',
-     
       },
       {
         name: 'Sales Rockstars',
         href: 'sales-rockstars',
-     
       },
 
     ],
@@ -45,12 +39,40 @@ const navigation = {
      
     ],
     company: [
-      { name: 'Mission Statement', href: 'our-mission' },
-      { name: 'Compliance is our focus', href: 'compliance-is-our-focus' },
-      { name: 'FAQS', href: 'faqs' },
-      { name: 'Competitive Advantages', href: 'competitive-advantages' },
-      // { name: 'Intercom Team', href: 'our-team' },
-      { name: 'Contact Us', href: 'contact-us' },
+      {
+        name: 'Mission Statement',
+        href: 'our-mission',
+      },
+      {
+        name: 'Compliance is our focus',
+        href: 'compliance-is-our-focus',
+      },
+      {
+        name: 'FAQS',
+        href: 'faqs',
+      },
+      {
+        name: 'Competitive Advantages',
+        href: 'competitive-advantages',
+      },
+      {
+        name: 'Our Capabilities',
+        href: 'our-capabilities',
+      },
+      // {
+      //   name: 'Intercom Team',
+      //   href: 'our-team',
+    
+      // },
+    
+      {
+        name: 'Articles',
+        href: 'articles',
+      },
+      {
+        name: 'Contact Us',
+        href: 'contact-us',
+      },
     ],
     employer: [
       // { name: 'Ebooks', href: 'ebooks' },
@@ -58,7 +80,6 @@ const navigation = {
       // { name: 'Staffing Specialist', href: 'staffing-specialist' },
       // { name: 'Growth Solutions', href: 'growth-solutions' },
       { name: 'Careers', href: 'careers' },
-      { name: 'Request New Talent', href: 'request-new-talent' },
     ],
     social: [
       {
@@ -174,7 +195,7 @@ const Footer = () => {
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-300" aria-hidden="true" />
-                  <span className="ml-3">info@intercomstaffing.com</span>
+                  <span className="ml-3"><a href="mailto:info@intercomstaffing.com">Press</a></span>
                 </dd>
               </div>
             </dl>
