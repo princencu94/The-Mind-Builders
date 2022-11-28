@@ -11,37 +11,19 @@ const validate = values => {
     errors.firstname = 'Required*';
   } 
 
-  if (!values.streetaddress) {
-      errors.streetaddress = 'Required*';
+  if (!values.companyname) {
+      errors.companyname = 'Required*';
   }
 
-  if (!values.city) {
-    errors.city = 'Required*';
+  if (!values.jobtitle) {
+    errors.jobtitle = 'Required*';
   } 
 
-  if (!values.previousjobtitle) {
-    errors.previousjobtitle = 'Required*';
+  if (!values.phone) {
+    errors.phone = 'Required*';
   } 
 
-  if (!values.region) {
-    errors.region = 'Required*';
-  } 
 
-  if (!values.postalcode) {
-    errors.postalcode = 'Required*';
-  } 
-
-  if (!values.jobstartdate) {
-    errors.jobstartdate = 'Required*';
-  } 
-
-  if (!values.jobenddate) {
-    errors.jobenddate = 'Required*';
-  } 
-
-  if (!values.about) {
-    errors.about = 'Required*';
-  } 
 
   if (!values.file) {
     errors.file = 'Required*';
@@ -71,14 +53,10 @@ const RequestNewTalentForm = () => {
           firstname: '',
           lastname: '',
           email: '',
-          streetaddress:'',
-          city:'',
-          region:'',
-          postalcode:'',
-          previousjobtitle:'',
-          jobstartdate:'',
-          jobenddate:'',
-          about:'',
+          companyname:'',
+          jobtitle:'',
+          phone:'',
+          seeking:'',
           file:'',
         },
         validate,
@@ -102,7 +80,7 @@ const RequestNewTalentForm = () => {
   
     return (
         <div className="container  mx-auto w-1/2 py-16">
-        <form className="space-y-8 divide-y divide-gray-200" enctype="multipart/form-data" ref={form} onSubmit={formik.handleSubmit}>
+        <form className="space-y-8 divide-y divide-gray-200" encType="multipart/form-data" ref={form} onSubmit={formik.handleSubmit}>
         <div className="space-y-8 divide-y divide-gray-200">
           <div>
             <div>
@@ -118,7 +96,6 @@ const RequestNewTalentForm = () => {
           <div className="pt-8">
             <div>
               <h3 className="text-lg leading-6 font-medium text-gray-900">Personal Information</h3>
-              <p className="mt-1 text-sm text-gray-500">Use a permanent address where you can receive mail.</p>
             </div>
             <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
               <div className="sm:col-span-3">
@@ -129,7 +106,7 @@ const RequestNewTalentForm = () => {
                   <input
                     type="text"
                     name="firstname"
-                    id="first-name"
+                    id="firstname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.firstname}
@@ -149,7 +126,7 @@ const RequestNewTalentForm = () => {
                   <input
                     type="text"
                     name="lastname"
-                    id="last-name"
+                    id="lastname"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.lastname}
@@ -160,10 +137,51 @@ const RequestNewTalentForm = () => {
                 <div><p className="text-red-600 text-sm">{formik.errors.lastname}</p></div>
                 ) : null}
               </div>
+
+              <div className="sm:col-span-3">
+                <label htmlFor="company-name" className="block text-sm font-medium text-gray-700">
+                  Company Name
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    name="companyname"
+                    id="companyname"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.companyname}
+                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
+                  />
+                </div>
+                {formik.touched.companyname && formik.errors.companyname ? (
+                <div><p className="text-red-600 text-sm">{formik.errors.companyname}</p></div>
+                ) : null}
+              </div>
+
+
+              <div className="sm:col-span-3">
+                <label htmlFor="job-title" className="block text-sm font-medium text-gray-700">
+                  Job Title
+                </label>
+                <div className="mt-1">
+                  <input
+                    type="text"
+                    name="jobtitle"
+                    id="jobtitle"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.jobtitle}
+                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
+                  />
+                </div>
+                {formik.touched.jobtitle && formik.errors.jobtitle ? (
+                <div><p className="text-red-600 text-sm">{formik.errors.jobtitle}</p></div>
+                ) : null}
+              </div>
   
-              <div className="sm:col-span-4">
+              <div className="sm:col-span-3">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email address
+                  Company email address
                 </label>
                 <div className="mt-1">
                   <input
@@ -180,179 +198,131 @@ const RequestNewTalentForm = () => {
                 <div><p className="text-red-600 text-sm">{formik.errors.email}</p></div>
                 ) : null}
               </div>
-  
-  
-              <div className="sm:col-span-6">
-                <label htmlFor="street-address" className="block text-sm font-medium text-gray-700">
-                  Street address
+
+              <div className="sm:col-span-3">
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+                  Phone Number
                 </label>
                 <div className="mt-1">
                   <input
+                    id="phone"
+                    name="phone"
                     type="text"
-                    name="streetaddress"
-                    id="streetaddress"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.streetaddress}
+                    value={formik.values.phone}
                     className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
-                {formik.touched.streetaddress && formik.errors.streetaddress ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.streetaddress}</p></div>
+                {formik.touched.phone && formik.errors.phone ? (
+                <div><p className="text-red-600 text-sm">{formik.errors.phone}</p></div>
                 ) : null}
               </div>
-  
-              <div className="sm:col-span-2">
-                <label htmlFor="city" className="block text-sm font-medium text-gray-700">
-                  City
-                </label>
-                <div className="mt-1">
+
+              <fieldset className="sm:col-span-4">
+              <legend className="text-lg leading-6 font-medium text-gray-900">What are you seeking to learn more about?</legend>
+              <div className="mt-4 space-y-4 ">
+                <div className="flex items-center">
                   <input
-                    type="text"
-                    name="city"
-                    id="city"
+                    id="talent-solutions"
+                    name="seeking"
+                    type="radio"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.city}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
+                    value="Talent Solutions"
+                    className="h-4 w-4 border-gray-300 text-yellow-600 focus:ring-yellow-500"
                   />
+                  <label htmlFor="talent-solutions" className="ml-3 block text-sm font-medium text-gray-700">
+                    Talent Solutions
+                  </label>
                 </div>
-                {formik.touched.city && formik.errors.city ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.city}</p></div>
-                ) : null}
+                <div className="flex items-center">
+                  <input
+                    id="employee-contractor-benefits"
+                    name="seeking"
+                    type="radio"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value="Employee/Contractor Benefits"
+                    className="h-4 w-4 border-gray-300 text-yellow-600 focus:ring-yellow-500"
+                  />
+                  <label htmlFor="employee-contractor-benefits" className="ml-3 block text-sm font-medium text-gray-700">
+                    Employee/Contractor Benefits
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="training-services"
+                    name="seeking"
+                    type="radio"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value="Training Services"
+                    className="h-4 w-4 border-gray-300 text-yellow-600 focus:ring-yellow-500"
+                  />
+                  <label htmlFor="training-services" className="ml-3 block text-sm font-medium text-gray-700">
+                    Training Services
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="team-building-through-improv"
+                    name="seeking"
+                    type="radio"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value="Team Building Through Improv!"
+                    className="h-4 w-4 border-gray-300 text-yellow-600 focus:ring-yellow-500"
+                  />
+                  <label htmlFor="team-building-through-improv" className="ml-3 block text-sm font-medium text-gray-700">
+                    Team Building Through Improv!
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="other"
+                    name="seeking"
+                    type="radio"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value="Other"
+                    className="h-4 w-4 border-gray-300 text-yellow-600 focus:ring-yellow-500"
+                  />
+                  <label htmlFor="other" className="ml-3 block text-sm font-medium text-gray-700">
+                    Other: Comment box below
+                  </label>
+                </div>
+                
               </div>
-  
-              <div className="sm:col-span-2">
-                <label htmlFor="region" className="block text-sm font-medium text-gray-700">
-                  State / Province
+            </fieldset>
+            <div className="sm:col-span-6">
+                <label htmlFor="other" className="sr-only text-sm font-medium text-gray-700">
+                  Comment
                 </label>
                 <div className="mt-1">
-                  <input
-                    type="text"
-                    name="region"
-                    id="region"
+                  <textarea
+                    id="other"
+                    name="seeking"
+                    rows={3}
+                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border border-gray-300 rounded-md"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                    value={formik.values.region}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
+                    value={formik.values.seeking}
                   />
                 </div>
-                {formik.touched.region && formik.errors.region ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.region}</p></div>
+                {formik.touched.other && formik.errors.other ? (
+                <div><p className="text-red-600 text-sm">{formik.errors.other}</p></div>
                 ) : null}
-              </div>
-  
-              <div className="sm:col-span-2">
-                <label htmlFor="postal-code" className="block text-sm font-medium text-gray-700">
-                  ZIP / Postal code
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="postalcode"
-                    id="postalcode"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.postalcode}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-                {formik.touched.postalcode && formik.errors.postalcode ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.postalcode}</p></div>
-                ) : null}
+              
               </div>
             </div>
           </div>
 
           <div className="pt-8">
-            <div>
-              <h3 className="text-lg leading-6 font-medium text-gray-900">Work History</h3>
-              <p className="mt-1 text-sm text-gray-500">Use a permanent address where you can receive mail.</p>
-            </div>
-
-            <div className="sm:col-span-6 mt-5">
-                <label htmlFor="previousjobtitle" className="block text-sm font-medium text-gray-700">
-                    Previous Job Title
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="text"
-                    name="previousjobtitle"
-                    id="previousjobtitle"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.previousjobtitle}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-
-                {formik.touched.previousjobtitle && formik.errors.previousjobtitle ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.previousjobtitle}</p></div>
-                ) : null}
-            </div>
+            
 
             <div className="mt-6 grid grid-cols-1 gap-y-6 gap-x-4 sm:grid-cols-6">
-              <div className="sm:col-span-3">
-                <label htmlFor="jobstartdate" className="block text-sm font-medium text-gray-700">
-                    Date Previous Job Started
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="date"
-                    name="jobstartdate"
-                    id="jobstartdate"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.jobstartdate}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-                {formik.touched.jobstartdate && formik.errors.jobstartdate ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.jobstartdate}</p></div>
-                ) : null}
-              </div>
-  
-              <div className="sm:col-span-3">
-                <label htmlFor="jobenddate" className="block text-sm font-medium text-gray-700">
-                    Date Previous Job Ended
-                </label>
-                <div className="mt-1">
-                  <input
-                    type="date"
-                    name="jobenddate"
-                    id="jobenddate"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.jobenddate}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border-gray-300 rounded-md"
-                  />
-                </div>
-                {formik.touched.jobenddate && formik.errors.jobenddate ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.jobenddate}</p></div>
-                ) : null}
-              </div>
-  
-              <div className="sm:col-span-6">
-                <label htmlFor="about" className="block text-sm font-medium text-gray-700">
-                  About
-                </label>
-                <div className="mt-1">
-                  <textarea
-                    id="about"
-                    name="about"
-                    rows={3}
-                    className="shadow-sm focus:ring-yellow-300 focus:border-yellow-300 block w-full sm:text-sm border border-gray-300 rounded-md"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.about}
-                  />
-                </div>
-                {formik.touched.about && formik.errors.about ? (
-                <div><p className="text-red-600 text-sm">{formik.errors.about}</p></div>
-                ) : null}
-                <p className="mt-2 text-sm text-gray-500">Write a few sentences about yourself.</p>
-              </div>
-
+              
               <div className="sm:col-span-6">
                 <label htmlFor="cover-photo" className="block text-sm font-medium text-gray-700">
                   Resume

@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.47c871e0.chunk.css",
-    "main.js": "/static/js/main.a9505daf.chunk.js",
-    "main.js.map": "/static/js/main.a9505daf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.60794048.js",
-    "runtime-main.js.map": "/static/js/runtime-main.60794048.js.map",
-    "static/js/2.56f944bf.chunk.js": "/static/js/2.56f944bf.chunk.js",
-    "static/js/2.56f944bf.chunk.js.map": "/static/js/2.56f944bf.chunk.js.map",
-    "static/js/3.92d89d43.chunk.js": "/static/js/3.92d89d43.chunk.js",
-    "static/js/3.92d89d43.chunk.js.map": "/static/js/3.92d89d43.chunk.js.map",
+    "main.css": "/static/css/main.e7f2f528.chunk.css",
+    "main.js": "/static/js/main.c8d2d8f1.chunk.js",
+    "main.js.map": "/static/js/main.c8d2d8f1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.63782977.js",
+    "runtime-main.js.map": "/static/js/runtime-main.63782977.js.map",
+    "static/js/2.a32cf4d1.chunk.js": "/static/js/2.a32cf4d1.chunk.js",
+    "static/js/2.a32cf4d1.chunk.js.map": "/static/js/2.a32cf4d1.chunk.js.map",
+    "static/js/3.c510f00b.chunk.js": "/static/js/3.c510f00b.chunk.js",
+    "static/js/3.c510f00b.chunk.js.map": "/static/js/3.c510f00b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.47c871e0.chunk.css.map": "/static/css/main.47c871e0.chunk.css.map",
-    "static/js/2.56f944bf.chunk.js.LICENSE.txt": "/static/js/2.56f944bf.chunk.js.LICENSE.txt",
+    "static/css/main.e7f2f528.chunk.css.map": "/static/css/main.e7f2f528.chunk.css.map",
+    "static/js/2.a32cf4d1.chunk.js.LICENSE.txt": "/static/js/2.a32cf4d1.chunk.js.LICENSE.txt",
     "static/media/Admin.d074d03e.jpg": "/static/media/Admin.d074d03e.jpg",
     "static/media/Intercom.fad72295.jpeg": "/static/media/Intercom.fad72295.jpeg",
     "static/media/banner.1201fcdb.png": "/static/media/banner.1201fcdb.png",
+    "static/media/benefits.5a66ed10.jpg": "/static/media/benefits.5a66ed10.jpg",
     "static/media/careers-bg-2.4d5f5fbe.jpg": "/static/media/careers-bg-2.4d5f5fbe.jpg",
     "static/media/careers-bg.8ccd732d.png": "/static/media/careers-bg.8ccd732d.png",
     "static/media/competitive.a2af1cde.jpg": "/static/media/competitive.a2af1cde.jpg",
@@ -42,9 +43,9 @@
     "static/media/virtual-assistant.2967e5e1.svg": "/static/media/virtual-assistant.2967e5e1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.60794048.js",
-    "static/js/2.56f944bf.chunk.js",
-    "static/css/main.47c871e0.chunk.css",
-    "static/js/main.a9505daf.chunk.js"
+    "static/js/runtime-main.63782977.js",
+    "static/js/2.a32cf4d1.chunk.js",
+    "static/css/main.e7f2f528.chunk.css",
+    "static/js/main.c8d2d8f1.chunk.js"
   ]
 }

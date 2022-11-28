@@ -73,7 +73,7 @@ const ServicesSection = () => {
             <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-2 lg:mt-0">
               {features.map((feature) => (
                 <Link  to={feature.href}>
-                <div className=" shadow-md mb-5 lg:mb-0 ring-offset-4 ring-2 rounded-md p-5 ring-black hover:bg-yellow-50 hover:transition ease-in-out delay-150 " key={feature.name}>
+                <div key={feature.name} className=" shadow-md mb-5 lg:mb-0 ring-offset-4 ring-2 rounded-md p-5 ring-black hover:bg-yellow-50 hover:transition ease-in-out delay-150 " >
                   <dt>
                     <div className="flex h-12 w-12 items-center justify-center rounded-full bg-yellow-300 text-black ">
                       <feature.icon className="h-6 w-6" aria-hidden="true" />

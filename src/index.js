@@ -9,13 +9,13 @@ import { Toaster } from 'react-hot-toast';
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <BrowserRouter>
         <ScrollToTop/>
         <Toaster position="top-right"/>
           <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );
 
