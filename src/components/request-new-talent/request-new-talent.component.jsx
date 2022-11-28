@@ -79,7 +79,7 @@ const RequestNewTalentForm = () => {
   
   
     return (
-        <div className="container  mx-auto w-1/2 py-16">
+        <div className="container  mx-auto w-5/6 lg:max-w-2xl py-16">
         <form className="space-y-8 divide-y divide-gray-200" encType="multipart/form-data" ref={form} onSubmit={formik.handleSubmit}>
         <div className="space-y-8 divide-y divide-gray-200">
           <div>
@@ -375,11 +375,11 @@ const RequestNewTalentForm = () => {
         </div>
   
         <div className="pt-5">
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <button
               type="submit"
               disabled={isSubmitting}
-              className="ml-3 inline-flex justify-center py-3 px-16 border border-transparent shadow-sm text-sm font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-400 "
+              className="w-full mx-auto  inline-flex justify-center py-3  border border-transparent shadow-sm text-sm font-medium rounded-full text-black bg-yellow-300 hover:bg-yellow-400 "
             >
               {
                 isSubmitting ?
